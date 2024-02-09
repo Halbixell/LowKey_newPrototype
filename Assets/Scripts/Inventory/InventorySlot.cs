@@ -10,6 +10,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     [SerializeField] private InventoryManager _inventoryManager;
     public Item SelectedMove;
 
+
+
     public void OnDrop(PointerEventData eventData)
     {
         GameObject dropped = eventData.pointerDrag;
@@ -29,45 +31,44 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 
     public void AddItemToSlot(DraggableItem draggableItem)
     {
-        if (!_inventoryManager.inventorySlots.Contains<InventorySlot>(this))
+        
+
+       if (!_inventoryManager.inventorySlots.Contains<InventorySlot>(this))
+            //D.h: Gibt es einen slot, in dem dieses Ding was ich hier habe, drin ist
         {
             if (transform.childCount == 0)
             {
+                
                 draggableItem.parentAfterDrag = transform;
             }
             else if (transform.childCount == 1)
             {
                 Transform currentChild = transform.GetChild(0);
                 GameObject storedItem = currentChild.gameObject;
-
-                // Setze das aktuelle Objekt in den Slot des gezogenen Objekts
                 draggableItem.parentAfterDrag = transform;
 
                 DraggableItem StoredDraggableItem = currentChild.GetComponent<DraggableItem>();
-
+                //index suchen
                 Transform i = _inventoryManager.inventorySlots[_inventoryManager.GetItemIndex(StoredDraggableItem.item)].gameObject.transform;
 
                 if (i.childCount == 0)
                 {
                     storedItem.transform.SetParent(i);
+                    
                 }
                 else
                 {
+                    
                     Destroy(StoredDraggableItem.gameObject);
                     Transform v = i.GetChild(0);
                     v.gameObject.transform.GetComponent<DraggableItem>().count++;
                     v.gameObject.transform.GetComponent<DraggableItem>().RefreshCount();
                 }
-                // Setze das gezogene Objekt an die Position des vorherigen Objekts im Slot
-                //storedItem.transform.SetParent(draggableItem.startParent);
-
-
                 // Aktualisiere die Position des vorherigen Objekts im Slot
                 storedItem.transform.SetAsLastSibling();
             }
         }
+        
     }
-
-
 
 }

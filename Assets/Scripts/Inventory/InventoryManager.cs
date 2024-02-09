@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using static Item;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
     public InventorySlot[] inventorySlots;
-    //public Dictionary<Item, int> maxStacks = new Dictionary<Item, int>();
+    public InventorySlot[] moveSlots;
+    public Sprite[] PictureList;
     public Item[] itemsToPickup;
     [SerializeField] private List<int> MaxStackList;
-
     private Item currentAutoFillItem;
     private int currentAutoFillCount;
-
-
-
     public GameObject inventoryItemPrefab;
     [HideInInspector] public bool alredyhere = false;
-    //public int maxStack = 8;
-
     [HideInInspector]public static InventoryManager Instance { get; private set; }
 
     void Awake()
@@ -55,7 +51,7 @@ public class InventoryManager : MonoBehaviour
                     currentAutoFillItem = itemsToPickup[i];
                     currentAutoFillCount = MaxStackList[i];
 
-                    // Check if the item is already in the inventory
+                    //überprüfe ob item schon im inventory ist
                     DraggableItem itemInSlot = slot.GetComponentInChildren<DraggableItem>();
                     if (itemInSlot != null && itemInSlot.item == currentAutoFillItem)
                     {
@@ -63,7 +59,6 @@ public class InventoryManager : MonoBehaviour
                         currentAutoFillCount -= itemInSlot.count;
                     }
 
-                    // Add the remaining count of the item to the slot
                     if (currentAutoFillCount > 0)
                     {
                         if (alredyhere == false)
@@ -112,7 +107,7 @@ public class InventoryManager : MonoBehaviour
 
                 if (itemInSlot == null)
                 {
-                    draggableItem = GetDraggableItem(item); // Änderung hier
+                    draggableItem = GetDraggableItem(item);
                     slot.AddItemToSlot(draggableItem);
                     return true;
                 }
@@ -122,23 +117,18 @@ public class InventoryManager : MonoBehaviour
         alredyhere = false;
         return false;
     }
+
+
+
     public DraggableItem GetDraggableItem(Item item)
     {
         for (int i = 0; i < itemsToPickup.Length; i++)
         {
             if (itemsToPickup[i] == item)
             {
-                
-
-                
                 GameObject newDraggableItemGO = new GameObject("DraggableItem");
-
-               
                 DraggableItem draggableItem = newDraggableItemGO.AddComponent<DraggableItem>();
-
-                
-                draggableItem.InitialiseItem(item, 1); // Du kannst die Anfangszählung anpassen
-
+                draggableItem.InitialiseItem(item, 1);
                 return draggableItem;
             }
         }
@@ -168,8 +158,10 @@ public class InventoryManager : MonoBehaviour
 
 
 
+
+
     public void AddItemToSlot(Item item)
-    {
+    {//Verwenden wir für trash skript
         int itemIndex = GetItemIndex(item);
 
         if (itemIndex != -1)
@@ -208,9 +200,6 @@ public class InventoryManager : MonoBehaviour
     {
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
         DraggableItem inventoryItem = newItemGo.GetComponent<DraggableItem>();
-        inventoryItem.InitialiseItem(item, 1); // Du kannst die Anfangszählung anpassen
+        inventoryItem.InitialiseItem(item, 1);
     }
-
-
-
 }
