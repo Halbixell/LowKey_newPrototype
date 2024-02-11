@@ -12,7 +12,6 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     public Image image;
     public Text counttext;
-    //public int ItemIndex;
     [HideInInspector] public Transform parentAfterDrag;
     [HideInInspector] public int count=1;
     [HideInInspector] public int countspeicher = 1;
