@@ -32,12 +32,16 @@ public class Item : ScriptableObject
     [SerializeField] Direction _dir;
     [SerializeField] List<Vector2> _moves;
 
+    [Header("Rotation")]
+    [SerializeField] int[] _rotation;
+
     public string Name => _name;
     public string Description => _description;
     public Sprite Sprite => _sprite;
     public Animation Anim => _anim;
     public Direction Dir => _dir;
     [HideInInspector] public List<Vector2> Moves => _moves;
+    public int[] Rotation => _rotation;
 }
 
 

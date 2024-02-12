@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    [SerializeField] public int moveSpeed;
     private bool isMoving = false;
 
     public float AreaAttackRadius = 2f;
@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
     public void HandleEnemyTurn(int MoveLooper)
     {
         //MoveLooper = (MoveLooper + 1)% 4;
-        StartCoroutine(EnemyTurnCoroutine(MoveLooper));
+        StartCoroutine(EnemyTurnCoroutine(MoveLooper, EnemyMoves.Rotation));
     }
 
     private void UpdateColliders(bool flag)
@@ -51,7 +51,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private IEnumerator EnemyTurnCoroutine(int MoveLooper)
+    private IEnumerator EnemyTurnCoroutine(int MoveLooper, int[] Directions)
     {
         MoveAlternator = 0;
         if (!isMoving)
@@ -69,10 +69,9 @@ public class EnemyController : MonoBehaviour
                     {
                         MoveAlternator = MoveAlternator + 1;
                         Vector2 moveVector = originalMoves[i];
-                        int[] Directions = { 0, 90, 180, 270 };
                         Vector2 temp;
                         float radians;
-                        radians = Directions[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) % 4] * Mathf.Deg2Rad;
+                        radians = Directions[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) %4] * Mathf.Deg2Rad;
 
                         temp.x = Mathf.RoundToInt(moveVector.x * Mathf.Cos(radians) - moveVector.y * Mathf.Sin(radians));
                         temp.y = Mathf.RoundToInt(moveVector.x * Mathf.Sin(radians) + moveVector.y * Mathf.Cos(radians));
@@ -113,6 +112,7 @@ public class EnemyController : MonoBehaviour
 
                     isMoving = false;
                 }
+             
             }
 
         }

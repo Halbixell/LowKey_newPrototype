@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd9ff976e097cb6469de0972a7d11444, type: 3}
-  m_Name: Thor
+  m_Name: Heimdall
   m_EditorClassIdentifier: 
   draggableItem: {fileID: 0}
-  _name: Thor
+  _name: Heimdall
   _description: 
   _sprite: {fileID: -1535848474, guid: e25e7adfead53744d9b40bf9ebf2c98f, type: 3}
   _anim: {fileID: 0}
-  _dir: 2
+  _dir: 3
   _moves:
   - {x: 1, y: 0}
   - {x: 1, y: 0}
   - {x: 1, y: 0}
   - {x: 1, y: 0}
-  _rotation: 000000005a000000b40000000e010000
+  _rotation: 00000000b400000000000000b4000000
