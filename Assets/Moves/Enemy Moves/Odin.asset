@@ -17,10 +17,10 @@ MonoBehaviour:
   _description: 
   _sprite: {fileID: -1535848474, guid: e25e7adfead53744d9b40bf9ebf2c98f, type: 3}
   _anim: {fileID: 0}
-  _dir: 2
+  _dir: 3
   _moves:
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
-  - {x: 1, y: 1}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
   _rotation: 000000005a000000b40000000e010000

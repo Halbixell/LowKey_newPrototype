@@ -92,9 +92,20 @@ public class EnemyController : MonoBehaviour
                                     yield return null;
                                 }
                             }
+                            else
+                            {
+                                yield return new WaitForSeconds(0.65f);
+                            }
 
-                            yield return new WaitForSeconds(0.05f);
-                            _animator.IsMoving = false;
+                            if (moveVector.y != 0)
+                            {
+                                _animator.IsMoving = false;
+                            }
+                            else
+                            {
+                                yield return new WaitForSeconds(0.2f);
+                                _animator.IsMoving = false;
+                            }
 
 
                         }
@@ -103,11 +114,11 @@ public class EnemyController : MonoBehaviour
                             MoveAlternator = MoveAlternator + 1;
                             UpdateColliders(true);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.15f);
+                            yield return new WaitForSeconds(0.25f);
                             ActivateColliders(true);
-                            yield return new WaitForSeconds(0.1f);
+                            yield return new WaitForSeconds(0.2f);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.15f);
+                            yield return new WaitForSeconds(0.25f);
                             UpdateColliders(false);
 
                         }
@@ -162,7 +173,7 @@ public class EnemyController : MonoBehaviour
                                 }
                             }
 
-                            yield return new WaitForSeconds(0.2f);
+                            yield return new WaitForSeconds(0.65f);
                             _animator.IsMoving = false;
 
 
@@ -173,11 +184,11 @@ public class EnemyController : MonoBehaviour
                             MoveAlternator = MoveAlternator + 1;
                             UpdateColliders(true);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.15f);
+                            yield return new WaitForSeconds(0.25f);
                             ActivateColliders(true);
-                            yield return new WaitForSeconds(0.1f);
+                            yield return new WaitForSeconds(0.2f);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.15f);
+                            yield return new WaitForSeconds(0.25f);
                             UpdateColliders(false);
 
                         }
