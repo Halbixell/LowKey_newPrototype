@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] public int moveSpeed;
+    [SerializeField] public float moveSpeed;
     private bool isMoving = false;
 
     public float AreaAttackRadius = 2f;
@@ -53,68 +53,141 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator EnemyTurnCoroutine(int MoveLooper, int[] Directions)
     {
-        MoveAlternator = 0;
-        if (!isMoving)
+        if (moveSpeed != 0)
         {
-            isMoving = true;
-
-            List<Vector2> originalMoves = new List<Vector2>(EnemyMoves.Moves);
-
-            for (int i = 0; i < originalMoves.Count; i++)
+            MoveAlternator = 0;
+            if (!isMoving)
             {
-                
-                if(!_levelController.StopMovement)
+                isMoving = true;
+
+                List<Vector2> originalMoves = new List<Vector2>(EnemyMoves.Moves);
+
+                for (int i = 0; i < originalMoves.Count; i++)
                 {
-                    if ((MoveAlternator % 2 == 0))
+
+                    if (!_levelController.StopMovement)
                     {
-                        MoveAlternator = MoveAlternator + 1;
-                        Vector2 moveVector = originalMoves[i];
-                        Vector2 temp;
-                        float radians;
-                        radians = Directions[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) %4] * Mathf.Deg2Rad;
-
-                        temp.x = Mathf.RoundToInt(moveVector.x * Mathf.Cos(radians) - moveVector.y * Mathf.Sin(radians));
-                        temp.y = Mathf.RoundToInt(moveVector.x * Mathf.Sin(radians) + moveVector.y * Mathf.Cos(radians));
-
-                        _animator.MoveX = Mathf.Clamp(temp.x, -1f, 1f);
-                        _animator.MoveY = Mathf.Clamp(temp.y, -1f, 1f);
-                        _animator.IsMoving = true;
-
-                        Vector3 targetPosition = transform.position + new Vector3(temp.x, temp.y, 0f);
-
-                        if (IsPathClear(targetPosition))
+                        if ((MoveAlternator % 2 == 0))
                         {
-                            while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+                            MoveAlternator = MoveAlternator + 1;
+                            Vector2 moveVector = originalMoves[i];
+                            Vector2 temp;
+                            float radians;
+                            radians = Directions[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) % 4] * Mathf.Deg2Rad;
+
+                            temp.x = Mathf.RoundToInt(moveVector.x * Mathf.Cos(radians) - moveVector.y * Mathf.Sin(radians));
+                            temp.y = Mathf.RoundToInt(moveVector.x * Mathf.Sin(radians) + moveVector.y * Mathf.Cos(radians));
+
+                            _animator.MoveX = Mathf.Clamp(temp.x, -1f, 1f);
+                            _animator.MoveY = Mathf.Clamp(temp.y, -1f, 1f);
+                            _animator.IsMoving = true;
+
+                            Vector3 targetPosition = transform.position + new Vector3(temp.x, temp.y, 0f);
+
+                            if (IsPathClear(targetPosition))
                             {
-                                transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-                                yield return null;
+                                while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+                                {
+                                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+                                    yield return null;
+                                }
                             }
+
+                            yield return new WaitForSeconds(0.05f);
+                            _animator.IsMoving = false;
+
+
+                        }
+                        else
+                        {
+                            MoveAlternator = MoveAlternator + 1;
+                            UpdateColliders(true);
+                            ActivateColliders(false);
+                            yield return new WaitForSeconds(0.15f);
+                            ActivateColliders(true);
+                            yield return new WaitForSeconds(0.1f);
+                            ActivateColliders(false);
+                            yield return new WaitForSeconds(0.15f);
+                            UpdateColliders(false);
+
                         }
 
-                        yield return new WaitForSeconds(0.05f);
-                        _animator.IsMoving = false;
-
-
-                    }
-                    else
-                    {
-                        MoveAlternator = MoveAlternator + 1;
-                        UpdateColliders(true);
-                        ActivateColliders(false);
-                        yield return new WaitForSeconds(0.15f);
-                        ActivateColliders(true);
-                        yield return new WaitForSeconds(0.1f);
-                        ActivateColliders(false);
-                        yield return new WaitForSeconds(0.15f);
-                        UpdateColliders(false);
-
+                        isMoving = false;
                     }
 
-                    isMoving = false;
                 }
-             
-            }
 
+            }
+        }
+        else
+        {
+            MoveAlternator = 0;
+            if (!isMoving)
+            {
+                isMoving = true;
+
+                List<Vector2> originalMoves = new List<Vector2>(EnemyMoves.Moves);
+
+                for (int i = 0; i < originalMoves.Count; i++)
+                {
+
+                    if (!_levelController.StopMovement)
+                    {
+                        if ((MoveAlternator % 2 == 0))
+                        {
+                            MoveAlternator = MoveAlternator + 1;
+                            int[] RotationX = { 1, 0, -1, 0 };
+                            int[] RotationY = { 0, 1, 0, -1 };
+
+                            Vector2 moveVector = originalMoves[i];
+                            Vector2 temp;
+                            float radians;
+                            radians = Directions[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) % 4] * Mathf.Deg2Rad;
+
+                            temp.x = Mathf.RoundToInt(moveVector.x * Mathf.Cos(radians) - moveVector.y * Mathf.Sin(radians));
+                            temp.y = Mathf.RoundToInt(moveVector.x * Mathf.Sin(radians) + moveVector.y * Mathf.Cos(radians));
+
+                            _animator.MoveX = Mathf.Clamp(RotationX[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) % 4], -1f, 1f);
+                            _animator.MoveY = Mathf.Clamp(RotationY[((int)EnemyMoves.Dir + MoveLooper + RotationOffset) % 4], -1f, 1f);
+                            _animator.IsMoving = true;
+
+                            Vector3 targetPosition = transform.position + new Vector3(temp.x, temp.y, 0f);
+
+                            if (IsPathClear(targetPosition))
+                            {
+                                while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
+                                {
+                                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+                                    yield return null;
+                                }
+                            }
+
+                            yield return new WaitForSeconds(0.2f);
+                            _animator.IsMoving = false;
+
+
+
+                        }
+                        else
+                        {
+                            MoveAlternator = MoveAlternator + 1;
+                            UpdateColliders(true);
+                            ActivateColliders(false);
+                            yield return new WaitForSeconds(0.15f);
+                            ActivateColliders(true);
+                            yield return new WaitForSeconds(0.1f);
+                            ActivateColliders(false);
+                            yield return new WaitForSeconds(0.15f);
+                            UpdateColliders(false);
+
+                        }
+
+                        isMoving = false;
+                    }
+
+                }
+
+            }
         }
     }
 
