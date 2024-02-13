@@ -23,10 +23,8 @@ public class LevelSelectionMenuManager : MonoBehaviour
     public void OnCurrentLevel()
     {
         int richtigesLevel = PlayerPrefs.GetInt("unlockedLevels", 0)+1;
-        Debug.Log("richtiges Level  "+ richtigesLevel);
         currentLevel = richtigesLevel;
         PlayerPrefs.Save();
-        Debug.Log("currentLEveL: "+ currentLevel);
         SceneManager.LoadScene("Level" + richtigesLevel);
     }
 
@@ -81,7 +79,6 @@ public class LevelSelectionMenuManager : MonoBehaviour
     {
         
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
-        Debug.Log("Start-Methode - unlockedLevels nach Aktualisierung: " + unlockedLevels);
 
         for (int i=0; i<levelObjects.Length; i++)
         {

@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public InventorySlot[] inventorySlots;
     public InventorySlot[] moveSlots;
     public Sprite[] PictureList;
+    public GameObject[] PictureOfMoves;
     public Item[] itemsToPickup;
     [SerializeField] private List<int> MaxStackList;
     private Item currentAutoFillItem;
