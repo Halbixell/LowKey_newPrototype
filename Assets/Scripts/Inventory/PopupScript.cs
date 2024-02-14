@@ -78,9 +78,8 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
         InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
         slot.transform.GetChild(0).GetComponent<DraggableItem>().item.ChangeDirection((int) (slot.transform.GetChild(0).GetComponent<DraggableItem>().item.Dir +4-1)%4);
-
         slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
-        Debug.Log(slot.SelectedMove.Dir);
+        
 
     }
 
