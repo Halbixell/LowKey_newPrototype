@@ -7,11 +7,10 @@ using UnityEngine.EventSystems;
 public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private InventoryManager inventoryManager;
-
-    //public float popupOffsetY = 50f; // Anpassbarer Offset
     private RectTransform popupRectTransform;
 
     public GameObject popup;
+    [HideInInspector] public Transform child;
     
     
 
@@ -34,13 +33,12 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Ich bin über dem MoveSlot");
 
         GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
 
         if (transform.childCount > 0)
         {
-            Transform child = transform.GetChild(0);
+            child = transform.GetChild(0);
             Image image = child.GetComponent<Image>();
             if (image != null)
             {
@@ -51,7 +49,7 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
                     {
                         //Position von Popup setzen
                         float slotHeight = GetComponent<RectTransform>().rect.height;
-                        Vector3 popupPosition = transform.position + new Vector3(0f, 1.5f*slotHeight, 0f);
+                        Vector3 popupPosition = transform.position + new Vector3(0f, 1*slotHeight, 0f);
                         popupRectTransform.position = popupPosition;
 
 
@@ -73,11 +71,11 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        bool isPointerOverSlot = EventSystem.current.IsPointerOverGameObject();
-        bool isPointerOverPopup = EventSystem.current.currentSelectedGameObject == popup;
+        Vector3 mousePosition = Input.mousePosition;
+        bool isPointerOverPopup = RectTransformUtility.RectangleContainsScreenPoint(popup.GetComponent<RectTransform>(), mousePosition);
 
 
-        if (!isPointerOverSlot|| (!isPointerOverPopup && EventSystem.current.IsPointerOverGameObject()))
+        if (!isPointerOverPopup)
         {
            
             GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
@@ -98,9 +96,4 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
