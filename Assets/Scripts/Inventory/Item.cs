@@ -39,6 +39,19 @@ public class Item : ScriptableObject
     public string Description => _description;
     public Sprite Sprite => _sprite;
     public Animation Anim => _anim;
+
+   
+
+    public void ChangeDirection(int amount)
+    {
+        //_dir = (Direction)(((int)_dir + amount+4) % 4);
+        _dir = (Direction)(amount%4);
+    }
+
+
+    
+
+
     public Direction Dir => _dir;
     [HideInInspector] public List<Vector2> Moves => _moves;
     public int[] Rotation => _rotation;

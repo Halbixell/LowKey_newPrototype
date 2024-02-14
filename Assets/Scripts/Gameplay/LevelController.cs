@@ -129,6 +129,6 @@ public class LevelController : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene("Demo Level");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

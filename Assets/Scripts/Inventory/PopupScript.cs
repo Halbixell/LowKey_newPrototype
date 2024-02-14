@@ -8,7 +8,19 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     public GameObject popup;
     [SerializeField] private InventoryManager inventoryManager;
-    [SerializeField] private RotateMovesScript rotateMoveScript;
+    [SerializeField] private IndexMemory indexMemory;
+    private GameObject diesesBild;
+
+
+    public enum Direction
+    {
+        Right = 0,
+        Up = 1,
+        Left = 2,
+        Down = 3
+    }
+
+
 
     public void Start()
     {
@@ -19,8 +31,8 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         popup.SetActive(true);
+        Transform child = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1].transform.GetChild(0);
 
-        Transform child = rotateMoveScript.child;
         Sprite[] Liste = inventoryManager.PictureList;
         GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
         Image image = child.GetComponent<Image>();
@@ -29,6 +41,7 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         {
             if (image.sprite == Liste[i])
             {
+                diesesBild = PictureOfMove_Liste[i];
                 //Bild von Move aktivieren
                 PictureOfMove_Liste[i].SetActive(true);
             }
@@ -55,11 +68,19 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnButtonLeft()
     {
-
+        InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
+        slot.transform.GetChild(0).GetComponent<DraggableItem>().item.ChangeDirection((int) (slot.transform.GetChild(0).GetComponent<DraggableItem>().item.Dir+4 + 1) % 4);
+        slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
     }
 
     public void OnButtonRight()
     {
+
+        InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
+        slot.transform.GetChild(0).GetComponent<DraggableItem>().item.ChangeDirection((int) (slot.transform.GetChild(0).GetComponent<DraggableItem>().item.Dir +4-1)%4);
+
+        slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
+        Debug.Log(slot.SelectedMove.Dir);
 
     }
 

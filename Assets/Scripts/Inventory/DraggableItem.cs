@@ -18,6 +18,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [HideInInspector]public Transform startParent;
     [HideInInspector]public Item item;
     [HideInInspector] DraggableItem draggedItemScript;
+    [HideInInspector] public int direction=0;
 
     [SerializeField] private InventoryManager _inventoryManager;
 

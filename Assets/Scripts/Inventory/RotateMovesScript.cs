@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private InventoryManager inventoryManager;
+    [SerializeField] private IndexMemory indexMemory;
     private RectTransform popupRectTransform;
 
     public GameObject popup;
@@ -33,7 +34,7 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-
+        indexMemory.IndexLastMove = transform.GetComponent<InventorySlot>().SlotIndex;
         GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
 
         if (transform.childCount > 0)
