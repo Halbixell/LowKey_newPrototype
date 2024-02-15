@@ -69,7 +69,8 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnButtonLeft()
     {
         InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
-        slot.transform.GetChild(0).GetComponent<DraggableItem>().item.ChangeDirection((int) (slot.transform.GetChild(0).GetComponent<DraggableItem>().item.Dir+4 + 1) % 4);
+        slot.direction = (slot.direction + 5)%4;
+        Debug.Log(slot.direction);
         slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
     }
 
@@ -77,7 +78,8 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
 
         InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
-        slot.transform.GetChild(0).GetComponent<DraggableItem>().item.ChangeDirection((int) (slot.transform.GetChild(0).GetComponent<DraggableItem>().item.Dir +4-1)%4);
+        slot.direction = (slot.direction + 3) % 4;
+        Debug.Log(slot.direction);
         slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
         
 

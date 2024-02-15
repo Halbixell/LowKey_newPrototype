@@ -44,7 +44,6 @@ public class Item : ScriptableObject
 
     public void ChangeDirection(int amount)
     {
-        //_dir = (Direction)(((int)_dir + amount+4) % 4);
         _dir = (Direction)(amount%4);
     }
 

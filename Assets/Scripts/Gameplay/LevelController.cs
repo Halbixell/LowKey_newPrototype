@@ -16,6 +16,7 @@ public class LevelController : MonoBehaviour
     [Header("Level UI")]
     [SerializeField] private Canvas UICanvas;
     [HideInInspector] public List<Item> MoveOptions;
+    [HideInInspector] public List<ItemEntry> MoveOptionsAndRotations;
     [HideInInspector] public bool StopMovement;
     [SerializeField] private Button RestartLevelWhilePlaying;
 
@@ -70,8 +71,8 @@ public class LevelController : MonoBehaviour
     void StartButtonClicked()
     {
         StopMovement = false;
-        MoveOptions = _listOfInventorySlots.CollectMoveOptions();
-        _player.MovePlayer(MoveOptions, Enemies);
+        MoveOptionsAndRotations = _listOfInventorySlots.CollectMoveOptionsandRotation();
+        _player.MovePlayer(MoveOptionsAndRotations, Enemies);
     }
 
     public void LevelLost()

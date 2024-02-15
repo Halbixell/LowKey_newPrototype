@@ -10,9 +10,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     [SerializeField] private InventoryManager _inventoryManager;
     public Item SelectedMove;
     public int SlotIndex = -1;
-    [HideInInspector] public int direction = 0;
-
-
+    [HideInInspector] public int direction;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -27,6 +25,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
             draggableItem.item.ChangeDirection(direction%4);
 
             SelectedMove = draggableItem.item;
+            direction = 0;
 
         }
     }

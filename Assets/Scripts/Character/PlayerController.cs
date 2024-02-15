@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Button StartMovement;
     protected CharacterAnimator _animator;
 
-    private List<Item> MoveList;
+    private List<ItemEntry> MoveList;
     private bool isMoving = false;
 
     private int MoveLooper = -1;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         _levelController = FindObjectOfType<LevelController>();
     }
 
-    public void MovePlayer(List<Item> MoveOptions, List<EnemyController> Enemies)
+    public void MovePlayer(List<ItemEntry> MoveOptions, List<EnemyController> Enemies)
     {
         if (!isMoving)
         {
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private IEnumerator MovePlayerCoroutine(List<Item> MoveOptions, List<EnemyController> Enemies)
+    private IEnumerator MovePlayerCoroutine(List<ItemEntry> MoveOptions, List<EnemyController> Enemies)
     {
         MoveList = MoveOptions;
         if (MoveList.Count != 0)
@@ -57,7 +57,8 @@ public class PlayerController : MonoBehaviour
                     enemy.HandleEnemyTurn(MoveLooper);
                 }
 
-                Item moveOption = MoveList[MoveOptionIndex];
+                Item moveOption = MoveList[MoveOptionIndex].move;
+                int Direction = MoveList[MoveOptionIndex].direction;
                 List<Vector2> originalMoves = new List<Vector2>(moveOption.Moves);
                 for (int i = 0; i < originalMoves.Count; i++)
                 {
@@ -67,7 +68,7 @@ public class PlayerController : MonoBehaviour
                         int[] Directions = { 0, 90, 180, 270 };
                         Vector2 temp;
 
-                        float radians = Directions[(int)moveOption.Dir] * Mathf.Deg2Rad;
+                        float radians = Directions[Direction] * Mathf.Deg2Rad;
 
                         temp.x = Mathf.RoundToInt(moveVector.x * Mathf.Cos(radians) - moveVector.y * Mathf.Sin(radians));
                         temp.y = Mathf.RoundToInt(moveVector.x * Mathf.Sin(radians) + moveVector.y * Mathf.Cos(radians));
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour
         yield return null;
     }
 
-    public void NotifyMoveOptionsChanged(List<Item> MoveOptionList)
+    public void NotifyMoveOptionsChanged(List<ItemEntry> MoveOptionList)
     {
         if (!isMoving)
         {
