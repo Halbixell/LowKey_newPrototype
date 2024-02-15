@@ -32,6 +32,7 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         popup.SetActive(true);
         Transform child = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1].transform.GetChild(0);
+        InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
 
         Sprite[] Liste = inventoryManager.PictureList;
         GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
@@ -43,6 +44,7 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             {
                 diesesBild = PictureOfMove_Liste[i];
                 //Bild von Move aktivieren
+                PictureOfMove_Liste[i].transform.rotation = Quaternion.Euler(0f, 0f, slot.rotation);
                 PictureOfMove_Liste[i].SetActive(true);
             }
         }
@@ -58,6 +60,7 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         //setze alle Bilder aus
         for (int i = 0; i < PictureOfMove_Liste.Length; i++)
         {
+            PictureOfMove_Liste[i].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             PictureOfMove_Liste[i].SetActive(false);
             
         }
@@ -70,8 +73,24 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
         slot.direction = (slot.direction + 5)%4;
-        Debug.Log(slot.direction);
         slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
+        slot.rotation += 90.0f;
+
+        Transform child = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1].transform.GetChild(0);
+
+        Sprite[] Liste = inventoryManager.PictureList;
+        GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
+        Image image = child.GetComponent<Image>();
+        for (int i = 0; i < Liste.Length; i++)
+        {
+            if (image.sprite == Liste[i])
+            {
+                PictureOfMove_Liste[i].transform.rotation = Quaternion.Euler(0f, 0f, slot.rotation);
+            }
+        }
+
+
+
     }
 
     public void OnButtonRight()
@@ -79,9 +98,22 @@ public class PopupScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
         InventorySlot slot = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1];
         slot.direction = (slot.direction + 3) % 4;
-        Debug.Log(slot.direction);
         slot.SelectedMove = slot.transform.GetChild(0).GetComponent<DraggableItem>().item;
-        
+        slot.rotation -= 90.0f;
+
+        Transform child = inventoryManager.moveSlots[indexMemory.IndexLastMove - 1].transform.GetChild(0);
+
+        Sprite[] Liste = inventoryManager.PictureList;
+        GameObject[] PictureOfMove_Liste = inventoryManager.PictureOfMoves;
+        Image image = child.GetComponent<Image>();
+        for (int i = 0; i < Liste.Length; i++)
+        {
+            if (image.sprite == Liste[i])
+            {
+                PictureOfMove_Liste[i].transform.rotation = Quaternion.Euler(0f, 0f, slot.rotation);
+            }
+        }
+
 
     }
 

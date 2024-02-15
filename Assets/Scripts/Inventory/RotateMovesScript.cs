@@ -55,6 +55,7 @@ public class RotateMovesScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
 
                         //Bild von Move aktivieren
+                        PictureOfMove_Liste[i].transform.rotation = Quaternion.Euler(0f,0f,transform.GetComponent<InventorySlot>().rotation);
                         PictureOfMove_Liste[i].SetActive(true);
 
                         if (popup != null)

@@ -15,6 +15,7 @@ public class PictureHereScript : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        PictureOfMove.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         PictureOfMove.SetActive(true);
         
     }

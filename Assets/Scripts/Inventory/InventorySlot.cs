@@ -11,6 +11,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     public Item SelectedMove;
     public int SlotIndex = -1;
     [HideInInspector] public int direction;
+    [HideInInspector] public float rotation = 0;
 
     public void OnDrop(PointerEventData eventData)
     {
