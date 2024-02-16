@@ -32,9 +32,6 @@ public class ListOfMoveSlots : MonoBehaviour
             {
                 ItemEntry temp = new ItemEntry(inventory.SelectedMove, inventory.direction);
                 MovesAndRotations.Add(temp);
-                
-
-                Debug.Log("<color=red>Added Move </color>" + inventory.SelectedMove.Name + " <color=red>in direction </color>" + inventory.direction);
                 inventory.direction = 0;
             }
         }

@@ -8,9 +8,13 @@ public class CollectibleRaven : MonoBehaviour
     public Transform flyAwayDestination;
 
     private Vector3 initialPosition;
-    private bool isPlayerInRange = false;
     private bool isMoving = false;
     private bool FlownAway = false;
+
+    [SerializeField] private Animator FlyAnimation;
+    public bool isTriggered = false;
+    public RavenCounter _ravenCounter;
+    public int RavenIndex = 1;
 
     private void Start()
     {
@@ -21,6 +25,7 @@ public class CollectibleRaven : MonoBehaviour
     {
         if (!isMoving && !FlownAway)
         {
+            FlyAnimation.SetTrigger("StopAnimation");
             Idle();
         }
 
@@ -32,26 +37,16 @@ public class CollectibleRaven : MonoBehaviour
         if (player != null)
         {
             FlyAway();
+            _ravenCounter.CollectRaven(RavenIndex-1);
         }
     }
 
     private void FlyAway()
     {
-        // Play your fly away animation here if needed
-
-        // Choose a direction (Up-left or up-right)
-        Vector3 flyAwayDirection = (Random.Range(0, 2) == 0) ? Vector3.up + Vector3.left : Vector3.up + Vector3.right;
-
-        // Move towards the fly away destination
-        transform.position = Vector3.MoveTowards(transform.position, flyAwayDestination.position, flyAwaySpeed * Time.deltaTime);
-
-        // Optionally, rotate the bird towards the fly away direction
-        transform.up = flyAwayDirection;
-
-        // Destroy the bird when it reaches the destination (you can customize this condition)
-        if (Vector3.Distance(transform.position, flyAwayDestination.position) < 0.1f)
+        if (!isTriggered)
         {
-            Destroy(gameObject);
+            FlyAnimation.SetTrigger("PlayAnimation");
+            isTriggered = true;
         }
     }
 
