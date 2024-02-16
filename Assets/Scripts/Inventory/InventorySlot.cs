@@ -32,7 +32,13 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     }
 
 
-
+    private void Update()
+    {
+        if(gameObject.transform.childCount == 0)
+        {
+            rotation = 0;
+        }
+    }
 
     public void AddItemToSlot(DraggableItem draggableItem)
     {
