@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour
     [HideInInspector] private LevelController _levelController;
 
     protected CharacterAnimator _animator;
+    private CharacterAnimator _colliders;
 
     public List<Collider2D> hitColliders;
 
@@ -37,6 +38,7 @@ public class EnemyController : MonoBehaviour
 
     private void UpdateColliders(bool flag)
     {
+
         foreach (Collider2D col in hitColliders)
         {
             col.gameObject.SetActive(flag);

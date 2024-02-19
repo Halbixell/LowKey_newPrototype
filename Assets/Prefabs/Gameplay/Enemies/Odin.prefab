@@ -233,6 +233,26 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 5380884208237716841, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
   m_PrefabInstance: {fileID: 5351853616596768759}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1223660442999983396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6538886028400646867, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+  m_PrefabInstance: {fileID: 5351853616596768759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3036446935861476738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223660442999983396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd669dcca85f1944acfacf158a189c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 3795125480830091832}
+  AdjustX: {x: 2, y: 1, z: 0}
+  AdjustY: {x: 1, y: 2, z: 0}
 --- !u!4 &3159991746072204271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
@@ -295,6 +315,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+--- !u!1 &628271063753536233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6538886028400646867, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+  m_PrefabInstance: {fileID: 5910652383749892154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8614420840888775181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628271063753536233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd669dcca85f1944acfacf158a189c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 3795125480830091832}
+  AdjustX: {x: 1, y: 0, z: 0}
+  AdjustY: {x: 0, y: 1, z: 0}
 --- !u!4 &3718225363106884642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
@@ -362,6 +402,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
   m_PrefabInstance: {fileID: 8384798542488136426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3378266979602411577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6538886028400646867, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+  m_PrefabInstance: {fileID: 8384798542488136426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5081234284960653907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3378266979602411577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd669dcca85f1944acfacf158a189c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 3795125480830091832}
+  AdjustX: {x: 2, y: -1, z: 0}
+  AdjustY: {x: -1, y: 2, z: 0}
 --- !u!61 &4535252867127398275 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 5380884208237716841, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
@@ -429,6 +489,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
   m_PrefabInstance: {fileID: 8966844318292030659}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2796290431083834896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6538886028400646867, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+  m_PrefabInstance: {fileID: 8966844318292030659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7219294064233966593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796290431083834896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd669dcca85f1944acfacf158a189c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 3795125480830091832}
+  AdjustX: {x: 2, y: 0, z: 0}
+  AdjustY: {x: 0, y: 2, z: 0}
 --- !u!61 &3953066233502503338 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 5380884208237716841, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
