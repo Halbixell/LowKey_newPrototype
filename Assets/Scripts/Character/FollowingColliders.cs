@@ -13,7 +13,7 @@ public class FollowingColliders : MonoBehaviour
     void Start()
     {
         _AnimState = _player.gameObject.GetComponent<CharacterAnimator>();
-        _collider = this.gameObject.GetComponent<CharacterAnimator>();
+        _collider = gameObject.GetComponent<CharacterAnimator>();
     }
 
     // Update is called once per frame

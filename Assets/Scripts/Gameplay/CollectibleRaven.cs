@@ -11,7 +11,7 @@ public class CollectibleRaven : MonoBehaviour
     private bool isMoving = false;
     private bool FlownAway = false;
 
-    [SerializeField] private Animator FlyAnimation;
+    public GameObject FlyingRaven;
     public bool isTriggered = false;
     public RavenCounter _ravenCounter;
     public int RavenIndex = 1;
@@ -25,7 +25,7 @@ public class CollectibleRaven : MonoBehaviour
     {
         if (!isMoving && !FlownAway)
         {
-            FlyAnimation.SetTrigger("StopAnimation");
+            
             Idle();
         }
 
@@ -45,7 +45,8 @@ public class CollectibleRaven : MonoBehaviour
     {
         if (!isTriggered)
         {
-            FlyAnimation.SetTrigger("PlayAnimation");
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            Instantiate(FlyingRaven, transform.position, transform.rotation);
             isTriggered = true;
         }
     }

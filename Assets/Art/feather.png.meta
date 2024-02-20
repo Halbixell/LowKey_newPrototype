@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c613091e6794cce4c808e1883e961191
+guid: 83c6444943e53e242a009b834f9a2909
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Raven_Flying_Spritesheet_0
+      name: feather_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 45
-        width: 39
-        height: 45
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1707b354f61d03f4e8103ef0ad9a05d4
-      internalID: -1048147058
+      spriteID: f223baa9bf767994db4fed952f9dd87b
+      internalID: 2008502707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Raven_Flying_Spritesheet_1
+      name: feather_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 45
-        width: 39
-        height: 45
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30b868c6f1c1f1142816f6f3b0d253e8
-      internalID: 1565094425
+      spriteID: 7244e2a5d71963f4c8b18efc326818db
+      internalID: -1056476167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Raven_Flying_Spritesheet_2
+      name: feather_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 45
-        width: 39
-        height: 45
+        x: 96
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9d26a1d99133ac49b5e069e350f5b0e
-      internalID: -2110992938
+      spriteID: de680d41e748d5c409bd8909aca3e06c
+      internalID: -1220339307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Raven_Flying_Spritesheet_3
+      name: feather_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b795fa965a6a943b38551d3e2ed6f1
+      internalID: -664343185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feather_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c1aee8a9db1e943908c10a870451c9
+      internalID: -150115757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feather_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d29241a3d9864247bf3223d51a7d519
+      internalID: -850913704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feather_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 39
-        height: 45
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +257,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9aa3a64c39937943ba2b3332d2be25b
-      internalID: -853976970
+      spriteID: 97e106507003549488449117efb8b324
+      internalID: -208933900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feather_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326070e593f85cb4f986a2a9eb3f4fc1
+      internalID: -1798240357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feather_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd87f713a4b54442849387b9a269ef9
+      internalID: -957372752
       vertices: []
       indices: 
       edges: []
@@ -211,10 +316,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Right_Raven_Flying_Spritesheet_0: -1048147058
-      Right_Raven_Flying_Spritesheet_1: 1565094425
-      Right_Raven_Flying_Spritesheet_2: -2110992938
-      Right_Raven_Flying_Spritesheet_3: -853976970
+      feather_0: 2008502707
+      feather_1: -1056476167
+      feather_2: -1220339307
+      feather_3: -664343185
+      feather_4: -150115757
+      feather_5: -850913704
+      feather_6: -208933900
+      feather_7: -1798240357
+      feather_8: -957372752
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
