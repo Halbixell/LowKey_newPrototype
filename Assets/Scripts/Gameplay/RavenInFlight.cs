@@ -38,10 +38,8 @@ public class RavenInFlight : MonoBehaviour
     {
         if (isAwake)
         {
-            Debug.Log("StartPos    " + startPos);
-            Debug.Log("Direction    " + Direction);
             float journeyLength = Vector2.Distance(startPos, startPos + Vector2.up * height);
-            Debug.Log("journeyLenght     " + journeyLength);
+            
             float distCovered = (Time.time - startTime) * moveSpeed;
             float fractionOfJourney = distCovered / journeyLength;
 
