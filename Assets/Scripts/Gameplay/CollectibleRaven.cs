@@ -8,7 +8,7 @@ public class CollectibleRaven : MonoBehaviour
     public Transform flyAwayDestination;
 
     private Vector3 initialPosition;
-    private bool isMoving = false;
+    //private bool isMoving = false;
     private bool FlownAway = false;
 
     public GameObject FlyingRaven;
@@ -23,7 +23,7 @@ public class CollectibleRaven : MonoBehaviour
 
     private void Update()
     {
-        if (!isMoving && !FlownAway)
+        if (!FlownAway)
         {
             
             Idle();
@@ -56,6 +56,7 @@ public class CollectibleRaven : MonoBehaviour
     {
         // Simple hopping idle animation
         float idleOffset = idleAmplitude * Mathf.Sin(idleSpeed * Time.time);
+        
         transform.position = initialPosition + Vector3.up * idleOffset;
     }
 }

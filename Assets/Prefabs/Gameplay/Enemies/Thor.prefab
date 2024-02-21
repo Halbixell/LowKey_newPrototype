@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5779378372964183796}
   - component: {fileID: 2980235766703485483}
   - component: {fileID: 4490623103471501723}
+  - component: {fileID: 3643618517575803951}
   m_Layer: 0
   m_Name: Thor
   m_TagString: Untagged
@@ -171,6 +172,18 @@ MonoBehaviour:
   - {fileID: 725708735784874301}
   - {fileID: 3750213279890197536}
   - {fileID: 6709465308198313822}
+--- !u!114 &3643618517575803951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8302913204544667640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1706990203965749815
 PrefabInstance:
   m_ObjectHideFlags: 0

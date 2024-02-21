@@ -12,8 +12,11 @@ public class RavenInFlight : MonoBehaviour
 
     private Vector2 Direction;
     bool alreadyFaded = false;
+    bool isAwake = false;
 
-    void Start()
+
+
+    void Awake()
     {
         startTime = Time.time;
         startPos = transform.position;
@@ -25,6 +28,7 @@ public class RavenInFlight : MonoBehaviour
 
         height += (float)offset;
         float journeyLength = Vector2.Distance(startPos, startPos + Vector2.up * height);
+        isAwake = true;
 
 
     }
@@ -32,22 +36,30 @@ public class RavenInFlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float journeyLength = Vector2.Distance(startPos, startPos + Vector2.up * height);
-        float distCovered = (Time.time - startTime) * moveSpeed;
-        float fractionOfJourney = distCovered / journeyLength;
-
-        transform.position = Vector2.Lerp(startPos, startPos + Vector2.up * height + Direction * 10f, fractionOfJourney);
-
-        if(fractionOfJourney >= 0.5f && !alreadyFaded)
+        if (isAwake)
         {
-            alreadyFaded = true;
-            StartCoroutine(fadeOut(gameObject.GetComponent<SpriteRenderer>(), journeyLength));
+            Debug.Log("StartPos    " + startPos);
+            Debug.Log("Direction    " + Direction);
+            float journeyLength = Vector2.Distance(startPos, startPos + Vector2.up * height);
+            Debug.Log("journeyLenght     " + journeyLength);
+            float distCovered = (Time.time - startTime) * moveSpeed;
+            float fractionOfJourney = distCovered / journeyLength;
 
+            transform.position = Vector2.Lerp(startPos, startPos + Vector2.up * height + Direction * 10f, fractionOfJourney);
+
+            if (fractionOfJourney >= 0.5f && !alreadyFaded)
+            {
+                alreadyFaded = true;
+                StartCoroutine(fadeOut(gameObject.GetComponent<SpriteRenderer>(), journeyLength));
+
+            }
+            if (fractionOfJourney >= 1)
+            {
+                Destroy(gameObject);
+                isAwake = false;
+            }
         }
-        if(fractionOfJourney >= 1)
-        {
-            Destroy(gameObject);
-        }
+        
 
     }
 
