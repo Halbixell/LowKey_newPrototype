@@ -48,6 +48,7 @@ public class CollectibleRaven : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
             Instantiate(FlyingRaven, transform.position, transform.rotation);
             isTriggered = true;
+            FlownAway = true;
         }
     }
 

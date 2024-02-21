@@ -277,6 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e278b8cb05cd24d818db1ddf0c022f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0
+  height: 0
 --- !u!4 &337492781
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,7 +1360,7 @@ MonoBehaviour:
   idleSpeed: 4
   flyAwaySpeed: 5
   flyAwayDestination: {fileID: 1178787828}
-  FlyAnimation: {fileID: 1219687330}
+  FlyingRaven: {fileID: 4121304387693249630, guid: b6c3caea571e6824ea4bfa20d6151941, type: 3}
   isTriggered: 0
   _ravenCounter: {fileID: 829202666}
   RavenIndex: 1
