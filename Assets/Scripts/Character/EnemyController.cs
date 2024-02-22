@@ -122,7 +122,7 @@ public class EnemyController : MonoBehaviour
                             ActivateColliders(false);
                             yield return new WaitForSeconds(0.25f);
                             ActivateColliders(true);
-                            yield return new WaitForSeconds(0.2f);
+                            yield return new WaitForSeconds(0.08f);
                             ActivateColliders(false);
                             yield return new WaitForSeconds(0.25f);
                             UpdateColliders(false);
@@ -192,7 +192,7 @@ public class EnemyController : MonoBehaviour
                             ActivateColliders(false);
                             yield return new WaitForSeconds(0.25f);
                             ActivateColliders(true);
-                            yield return new WaitForSeconds(0.2f);
+                            yield return new WaitForSeconds(0.1f);
                             ActivateColliders(false);
                             yield return new WaitForSeconds(0.25f);
                             UpdateColliders(false);
