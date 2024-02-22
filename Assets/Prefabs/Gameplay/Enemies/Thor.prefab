@@ -53,18 +53,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.15260851, y: -0.1322611}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 1.4375, y: 1.375}
+    newSize: {x: 1.15, y: 1.1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2}
+  m_Size: {x: 1.0203481, y: 1.057565}
   m_EdgeRadius: 0
 --- !u!212 &5779378372964183796
 SpriteRenderer:
@@ -107,15 +107,15 @@ SpriteRenderer:
   m_SortingLayerID: -671507713
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1729121498, guid: e25e7adfead53744d9b40bf9ebf2c98f, type: 3}
+  m_Sprite: {fileID: -359789171, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.15, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2980235766703485483
@@ -132,25 +132,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultDirection: 1
   walkDownSprites:
-  - {fileID: -1126970327, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1602691426, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1895699477, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -702863998, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: -359789171, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -681436616, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -2125505701, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -916503427, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
   walkUpSprites:
-  - {fileID: -549882119, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 623816885, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 2074145961, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 2011330428, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: 248402034, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -1915605850, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -1272279393, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: 535247443, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
   walkRightSprites:
-  - {fileID: -1456413512, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -100205389, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -788073181, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -2038744993, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: -173400040, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -1982205738, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: 1034584479, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: 2041639998, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
   walkLeftSprites:
-  - {fileID: 956332509, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -498152839, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -2009144324, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1076289958, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: 1847081490, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: -71969006, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: 1894198230, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
+  - {fileID: 1904293055, guid: c38141d076edd4246a8e3288a4c99aa8, type: 3}
 --- !u!114 &4490623103471501723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PopupWithAnimation: {fileID: 0}
 --- !u!1001 &1706990203965749815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -272,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -335,11 +336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -402,11 +403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: -1.24
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -1.42
       objectReference: {fileID: 0}
     - target: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
       propertyPath: m_LocalPosition.z

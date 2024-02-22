@@ -52,18 +52,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.09472099}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
+    oldSize: {x: 1.1666666, y: 1.4444444}
+    newSize: {x: 1.05, y: 1.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2}
+  m_Size: {x: 1, y: 1.0947547}
   m_EdgeRadius: 0
 --- !u!212 &5160783307277479187
 SpriteRenderer:
@@ -106,15 +106,15 @@ SpriteRenderer:
   m_SortingLayerID: -671507713
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1729121498, guid: e25e7adfead53744d9b40bf9ebf2c98f, type: 3}
+  m_Sprite: {fileID: -833375541, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.05, y: 1.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4535511520051114444
@@ -131,25 +131,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultDirection: 1
   walkDownSprites:
-  - {fileID: -1126970327, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1602691426, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1895699477, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -702863998, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: -833375541, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -1710448650, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -692079475, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -1626682498, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
   walkUpSprites:
-  - {fileID: -549882119, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 623816885, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 2074145961, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: 2011330428, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: 101710519, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -101146226, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 920655324, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -1426919529, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
   walkRightSprites:
-  - {fileID: -1456413512, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -100205389, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -788073181, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -2038744993, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: 1260994415, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 2139976280, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: -1076052488, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 1396160901, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
   walkLeftSprites:
-  - {fileID: 956332509, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -498152839, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -2009144324, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
-  - {fileID: -1076289958, guid: 25380ffff1dd43a44ba0a177b6678ec3, type: 3}
+  - {fileID: -1639266965, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 581564665, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 246253444, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
+  - {fileID: 621659816, guid: caa8c96ecc95d9e4892eaa6c4af73af0, type: 3}
 --- !u!114 &3025107210083762812
 MonoBehaviour:
   m_ObjectHideFlags: 0

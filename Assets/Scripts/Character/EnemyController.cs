@@ -21,6 +21,8 @@ public class EnemyController : MonoBehaviour
 
     public List<Collider2D> hitColliders;
 
+    private PlayerController _player;
+
 
     private void Start()
     {
@@ -28,6 +30,8 @@ public class EnemyController : MonoBehaviour
         _animator = GetComponent<CharacterAnimator>();
         UpdateColliders(false);
         RotationOffset = (RotationOffset % 4);
+
+        _player = FindObjectOfType<PlayerController>();
     }
 
     public void HandleEnemyTurn(int MoveLooper)
@@ -221,6 +225,16 @@ public class EnemyController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player in the area!");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayerController player = collision.GetComponent<PlayerController>();
+        if (player != null)
+        {
+            Debug.Log("Found The Player!");
+            _player.PlayerDetected();
         }
     }
 }
