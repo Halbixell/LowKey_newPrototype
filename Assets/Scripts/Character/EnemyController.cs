@@ -73,7 +73,7 @@ public class EnemyController : MonoBehaviour
 
                     if (!_levelController.StopMovement)
                     {
-                        if ((MoveAlternator % 2 == 0))
+                        if ((MoveAlternator % 2 == 0) )
                         {
                             MoveAlternator = MoveAlternator + 1;
                             Vector2 moveVector = originalMoves[i];
