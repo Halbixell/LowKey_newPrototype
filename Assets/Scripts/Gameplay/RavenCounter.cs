@@ -8,6 +8,8 @@ public class RavenCounter : MonoBehaviour
     public LevelController _levelController;
     public int AmountOfRavens = 0;
     [SerializeField] private Image[] RavenImages;
+    [SerializeField] private Sprite notCollected;
+    [SerializeField] private Sprite Collected;
 
     [SerializeField] private CollectibleRaven[] Ravens;
 
@@ -16,7 +18,7 @@ public class RavenCounter : MonoBehaviour
     {
         for(int i = 0; i < RavenImages.Length; i++)
         {
-            RavenImages[i].color = new Color(0f, 0f, 0f, 1f);
+            RavenImages[i].sprite = notCollected;
         }
     }
 
@@ -28,11 +30,11 @@ public class RavenCounter : MonoBehaviour
 
     public void CollectRaven(int Ravenindex)
     {
-        if(RavenImages[Ravenindex].color != new Color(1f,1f,1f,1f))
+        if(RavenImages[Ravenindex].sprite != notCollected)
         {
             AmountOfRavens += 1;
         }
-        RavenImages[Ravenindex].color = new Color(1f,1f,1f,1f);
+        RavenImages[Ravenindex].sprite = Collected;
         
     }
 }
