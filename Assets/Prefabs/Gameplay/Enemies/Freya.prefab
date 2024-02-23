@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5160783307277479187}
   - component: {fileID: 4535511520051114444}
   - component: {fileID: 3025107210083762812}
+  - component: {fileID: 8233358033549967057}
   m_Layer: 0
   m_Name: Freya
   m_TagString: Untagged
@@ -171,6 +172,19 @@ MonoBehaviour:
   - {fileID: 2141619201956786906}
   - {fileID: 2567575200331599815}
   - {fileID: 0}
+--- !u!114 &8233358033549967057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247255525935037471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopupWithAnimation: {fileID: 0}
 --- !u!1001 &7531219388725712
 PrefabInstance:
   m_ObjectHideFlags: 0

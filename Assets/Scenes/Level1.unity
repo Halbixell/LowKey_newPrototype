@@ -263,11 +263,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5722669054630309011, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
   m_PrefabInstance: {fileID: 709833368619166562}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &290271489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1012735673975814383, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
-  m_PrefabInstance: {fileID: 9021882319469126448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &501407028 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6765687094679784837, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -1409,11 +1404,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1231330204 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
-  m_PrefabInstance: {fileID: 791256326552646947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1278695504 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 405461493544887422, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -1757,11 +1747,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0001, y: 0.0001}
   m_EdgeRadius: 0
---- !u!1 &1984387754 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7247255525935037471, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
-  m_PrefabInstance: {fileID: 1705372295964526318}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2004119448 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3957215730059323386, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -2897,6 +2882,10 @@ PrefabInstance:
       propertyPath: hitColliders.Array.data[3]
       value: 
       objectReference: {fileID: 774631973}
+    - target: {fileID: 3932399822890046357, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: PopupWithAnimation
+      value: 
+      objectReference: {fileID: 1438988647}
     - target: {fileID: 4563347149827826892, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3103,6 +3092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freya
       objectReference: {fileID: 0}
+    - target: {fileID: 8233358033549967057, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: PopupWithAnimation
+      value: 
+      objectReference: {fileID: 251919689}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
 --- !u!1001 &2751282094843298026
@@ -3438,73 +3431,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
   m_PrefabInstance: {fileID: 1705372295964526318}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984387754}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4490623103332123795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984387754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PopupWithAnimation: {fileID: 251919689}
 --- !u!114 &4490623103910028732 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
   m_PrefabInstance: {fileID: 9021882319469126448}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290271489}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4490623103910028733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290271489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PopupWithAnimation: {fileID: 645157415}
 --- !u!114 &4490623104109393691 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
   m_PrefabInstance: {fileID: 791256326552646947}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231330204}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4490623104109393692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231330204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PopupWithAnimation: {fileID: 1438988647}
 --- !u!1001 &4587596512113762019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3899,6 +3853,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1135651125}
     m_Modifications:
+    - target: {fileID: 843720305371491313, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: PopupWithAnimation
+      value: 
+      objectReference: {fileID: 645157415}
     - target: {fileID: 1012735673975814383, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_Name
       value: Heimdall

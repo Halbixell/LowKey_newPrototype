@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6543555906979196247}
   - component: {fileID: 2567324243838366088}
   - component: {fileID: 3795125480830091832}
+  - component: {fileID: 3932399822890046357}
   m_Layer: 0
   m_Name: Odin
   m_TagString: Untagged
@@ -159,6 +160,19 @@ MonoBehaviour:
   - {fileID: 65626756327371422}
   - {fileID: 4535252867127398275}
   - {fileID: 0}
+--- !u!114 &3932399822890046357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8773791621313821787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa6d0db44fd2924f88e51b752b6c373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopupWithAnimation: {fileID: 0}
 --- !u!1001 &5351853616596768759
 PrefabInstance:
   m_ObjectHideFlags: 0
