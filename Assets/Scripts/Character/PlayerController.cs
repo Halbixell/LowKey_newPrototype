@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
                         }
                         else
                         {
-                            yield return new WaitForSeconds(0.4f);
+                            yield return new WaitForSeconds(0.6f);
                             _animator.IsMoving = false;
                         }
                     }
