@@ -2181,6 +2181,7 @@ GameObject:
   - component: {fileID: 5031284844222581129}
   - component: {fileID: 980200685205482639}
   - component: {fileID: 2518059583154411983}
+  - component: {fileID: 8916750971649726480}
   m_Layer: 5
   m_Name: PictureOfMove
   m_TagString: Untagged
@@ -2247,6 +2248,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8916750971649726480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6061496420882078571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b874bf5cf8875447919457ae9c46cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListeVonVideos:
+  - {fileID: 5722669054630309011}
+  - {fileID: 8854282220558761713}
+  - {fileID: 2569599363875247006}
+  - {fileID: 174806993784361595}
 --- !u!1 &6498043584197803016
 GameObject:
   m_ObjectHideFlags: 0
