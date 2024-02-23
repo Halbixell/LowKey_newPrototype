@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8671f54a763dbac46b78b4db926e6575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popup: {fileID: 0}
+  popup: {fileID: 531911043482697045}
   inventoryManager: {fileID: 0}
-  indexMemory: {fileID: 0}
+  indexMemory: {fileID: 5128803996566333935}
 --- !u!1 &1035365793513235902
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +671,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3682388430446548082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5086575152219222712}
+        m_TargetAssemblyTypeName: PopupScript, Assembly-CSharp
+        m_MethodName: OnButtonLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2534690359915610796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,7 +1676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 463407153681600819}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5086575152219222712}
+        m_TargetAssemblyTypeName: PopupScript, Assembly-CSharp
+        m_MethodName: OnButtonRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4141490652460769731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2168,7 @@ MonoBehaviour:
   notCollected: {fileID: 21300000, guid: c6389562d1803c244a7db621f1cf2342, type: 3}
   Collected: {fileID: 21300000, guid: d5371160209f8c4439df4b02605810d0, type: 3}
   Ravens:
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!1 &6061496420882078571
 GameObject:
