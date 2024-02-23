@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
   AreaAttackRadius: 2
   RotationOffset: 0
   EnemyMoves: {fileID: 11400000, guid: 43e92b6f25f7c5247acd6125eef54c00, type: 2}

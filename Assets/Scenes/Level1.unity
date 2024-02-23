@@ -2301,7 +2301,7 @@ GameObject:
   - component: {fileID: 1169570738}
   - component: {fileID: 1169570737}
   - component: {fileID: 1169570736}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SolidObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}

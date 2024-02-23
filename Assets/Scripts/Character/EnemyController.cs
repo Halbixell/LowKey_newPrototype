@@ -120,11 +120,11 @@ public class EnemyController : MonoBehaviour
                             MoveAlternator = MoveAlternator + 1;
                             UpdateColliders(true);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.25f);
+                            yield return new WaitForSeconds(0.2f);
                             ActivateColliders(true);
-                            yield return new WaitForSeconds(0.08f);
+                            yield return new WaitForSeconds(0.05f);
                             ActivateColliders(false);
-                            yield return new WaitForSeconds(0.25f);
+                            yield return new WaitForSeconds(0.2f);
                             UpdateColliders(false);
 
                         }
