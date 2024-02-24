@@ -1508,6 +1508,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5964117530086164961, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
   m_PrefabInstance: {fileID: 332835103}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &511721638 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4436494233519712743, guid: dd6a79363e20a0f4a81f9c5685e43596, type: 3}
+  m_PrefabInstance: {fileID: 314226631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &599308827
 GameObject:
   m_ObjectHideFlags: 0
@@ -16643,6 +16654,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1074764687}
     - target: {fileID: 1287783273683048298, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+      propertyPath: _ravenCounter
+      value: 
+      objectReference: {fileID: 922458340}
+    - target: {fileID: 1287783273683048298, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
       propertyPath: GameOverCanvas
       value: 
       objectReference: {fileID: 1074764689}
@@ -16650,6 +16665,10 @@ PrefabInstance:
       propertyPath: LevelWonCanvas
       value: 
       objectReference: {fileID: 314226636}
+    - target: {fileID: 1287783273683048298, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 511721638}
     - target: {fileID: 1287783273683048298, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
       propertyPath: LoseRestartButton
       value: 

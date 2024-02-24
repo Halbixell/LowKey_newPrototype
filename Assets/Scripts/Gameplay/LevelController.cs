@@ -28,6 +28,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] TMP_Text WinText;
     [SerializeField] Button WinMainMenuButton;
     [SerializeField] Button WinRestartLevelButton;
+    [SerializeField] Button NextLevelButton;
 
     [Header("Game Over UI")]
     [SerializeField] private Canvas GameOverCanvas;
@@ -37,6 +38,9 @@ public class LevelController : MonoBehaviour
     [SerializeField] TMP_Text GameOverText;
     [SerializeField] Button LoseMainMenuButton;
     [SerializeField] Button LoseRestartButton;
+
+    [Header("Ravens")]
+    public RavenCounter _ravenCounter;
 
 
 
@@ -59,6 +63,7 @@ public class LevelController : MonoBehaviour
         RestartLevelWhilePlaying.onClick.AddListener(RestartLevel);
         WinMainMenuButton.onClick.AddListener(LoadMainMenu);
         WinRestartLevelButton.onClick.AddListener(RestartLevel);
+        NextLevelButton.onClick.AddListener(LoadNextLevel);
     }
 
     void Update()
@@ -89,8 +94,25 @@ public class LevelController : MonoBehaviour
         Debug.Log("Level is won");
         LevelWonCanvas.gameObject.SetActive(true);
         StartCoroutine(FadeInScreen(LevelWonCanvasGroup, WinText));
+        int stars = _ravenCounter.AmountOfRavens+1;
+
+        if (LevelSelectionMenuManager.currentLevel - 1 == LevelSelectionMenuManager.unlockedLevels)
+        {
+            LevelSelectionMenuManager.unlockedLevels++;
+            PlayerPrefs.SetInt("unlockedLevels", LevelSelectionMenuManager.unlockedLevels);
+
+        }
+        int richtigeZahl = LevelSelectionMenuManager.currentLevel - 1;
+        if (stars > PlayerPrefs.GetInt("stars" + richtigeZahl.ToString(), 0))
+        {
+            PlayerPrefs.SetInt("stars" + richtigeZahl.ToString(), stars);
+        }
+
 
     }
+
+   
+
     private IEnumerator FadeInScreen(CanvasGroup Screen, TMP_Text Text)
     {
         float timer = 0f;
@@ -125,11 +147,18 @@ public class LevelController : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("LevelSelector");
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void LoadNextLevel()
+    {
+        LevelSelectionMenuManager.currentLevel++;
+        SceneManager.LoadScene(LevelSelectionMenuManager.currentLevel);
+    }
+
+   
 }

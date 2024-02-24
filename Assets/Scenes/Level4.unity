@@ -697,6 +697,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6a79363e20a0f4a81f9c5685e43596, type: 3}
+--- !u!114 &1111288618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4436494233519712743, guid: dd6a79363e20a0f4a81f9c5685e43596, type: 3}
+  m_PrefabInstance: {fileID: 1111288617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1163503623 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5324767631734842069, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -1551,6 +1562,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+--- !u!114 &1559672086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3990352254427028231, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+  m_PrefabInstance: {fileID: 1559672085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cc9c09d70090a4e8f760fa863971dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1604693309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26008,6 +26030,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1990879397}
     - target: {fileID: 8817275693192595511, guid: 378da934573c3b248ab47bcd89c22d03, type: 3}
+      propertyPath: _ravenCounter
+      value: 
+      objectReference: {fileID: 1559672086}
+    - target: {fileID: 8817275693192595511, guid: 378da934573c3b248ab47bcd89c22d03, type: 3}
       propertyPath: GameOverCanvas
       value: 
       objectReference: {fileID: 1038982700}
@@ -26015,6 +26041,10 @@ PrefabInstance:
       propertyPath: LevelWonCanvas
       value: 
       objectReference: {fileID: 1033516761}
+    - target: {fileID: 8817275693192595511, guid: 378da934573c3b248ab47bcd89c22d03, type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1111288618}
     - target: {fileID: 8817275693192595511, guid: 378da934573c3b248ab47bcd89c22d03, type: 3}
       propertyPath: LoseRestartButton
       value: 

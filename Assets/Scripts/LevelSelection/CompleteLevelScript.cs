@@ -29,7 +29,6 @@ public class CompleteLevelScript : MonoBehaviour
         int richtigeZahl = LevelSelectionMenuManager.currentLevel - 1;
         if (stars > PlayerPrefs.GetInt("stars" + richtigeZahl.ToString(),0))
         {
-            Debug.Log("ich aktualisiere Sterne");
             PlayerPrefs.SetInt("stars" + richtigeZahl.ToString(), stars);
         }
         SceneManager.LoadScene("LevelSelector");
