@@ -42,6 +42,9 @@ public class LevelController : MonoBehaviour
     [Header("Ravens")]
     public RavenCounter _ravenCounter;
 
+    [Header("How to Play")]
+    [SerializeField] Button HowToPlayButton;
+
 
 
     //################################################################################################
@@ -64,6 +67,7 @@ public class LevelController : MonoBehaviour
         WinMainMenuButton.onClick.AddListener(LoadMainMenu);
         WinRestartLevelButton.onClick.AddListener(RestartLevel);
         NextLevelButton.onClick.AddListener(LoadNextLevel);
+        HowToPlayButton.onClick.AddListener(LoadHowToPlay);
     }
 
     void Update()
@@ -162,5 +166,10 @@ public class LevelController : MonoBehaviour
         SceneManager.LoadScene("Level"+LevelSelectionMenuManager.currentLevel);
     }
 
-   
+   public void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+
 }

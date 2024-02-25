@@ -57,6 +57,33 @@ public class HowToPlayScript : MonoBehaviour
         }
     }
 
+    public void ButtonPressBefore()
+    {
+        if (StepCounter >= 1)
+        {
+            AnimationSteps[StepCounter].SetActive(false);
+            StepCounter -= 1;
+            AnimationSteps[StepCounter].SetActive(true);
+
+            switch (StepCounter)
+            {
+                case 1:
+                    Vector2 targetPosition = new Vector2(-305, -260);
+                    MoveImageToTarget(targetPosition);
+                    break;
+                case 3:
+                    Vector2 targetPosition2 = new Vector2(336, -265);
+                    MoveImageToTargetAndDelete(targetPosition2);
+                    break;
+                case 5:
+                    _player.MovePlayer();
+                    break;
+
+
+            }
+        }
+    }
+
 
     public int moveSpeed = 100000;
 
