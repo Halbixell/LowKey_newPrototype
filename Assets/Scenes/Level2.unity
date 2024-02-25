@@ -1514,6 +1514,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
+      propertyPath: _ravenCounter
+      value: 
+      objectReference: {fileID: 65768768}
+    - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
       propertyPath: _levelcontroller
       value: 
       objectReference: {fileID: 1110582217}

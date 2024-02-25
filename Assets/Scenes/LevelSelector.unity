@@ -2792,11 +2792,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddefda7d43163a84b923befd881fd548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelButton: {fileID: 0}
+  LevelButton: {fileID: 63223970}
   Stars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 575534693}
+  - {fileID: 124291178}
+  - {fileID: 2087066649}
 --- !u!1 &594198025
 GameObject:
   m_ObjectHideFlags: 0

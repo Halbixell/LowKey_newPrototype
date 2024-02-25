@@ -1450,6 +1450,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
+      propertyPath: _ravenCounter
+      value: 
+      objectReference: {fileID: 922458340}
+    - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
       propertyPath: _levelcontroller
       value: 
       objectReference: {fileID: 1936079305}
@@ -16885,6 +16889,10 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[3]
       value: 
       objectReference: {fileID: 922458346}
+    - target: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+      propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
 --- !u!114 &1936079304 stripped

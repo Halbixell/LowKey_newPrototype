@@ -7,9 +7,9 @@ public class RavenCounter : MonoBehaviour
 {
     public LevelController _levelController;
     public int AmountOfRavens = 0;
-    [SerializeField] private Image[] RavenImages;
-    [SerializeField] private Sprite notCollected;
-    [SerializeField] private Sprite Collected;
+    [SerializeField] public Image[] RavenImages;
+    [SerializeField] public Sprite notCollected;
+    [SerializeField] public Sprite Collected;
 
     [SerializeField] private CollectibleRaven[] Ravens;
 
@@ -30,11 +30,11 @@ public class RavenCounter : MonoBehaviour
 
     public void CollectRaven(int Ravenindex)
     {
-        if(RavenImages[Ravenindex].sprite != notCollected)
-        {
-            AmountOfRavens += 1;
-        }
         RavenImages[Ravenindex].sprite = Collected;
+        if (RavenImages[Ravenindex].sprite != notCollected)
+        {
+            AmountOfRavens = AmountOfRavens + 1;
+        }
         
     }
 }

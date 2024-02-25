@@ -94,7 +94,8 @@ public class LevelController : MonoBehaviour
         Debug.Log("Level is won");
         LevelWonCanvas.gameObject.SetActive(true);
         StartCoroutine(FadeInScreen(LevelWonCanvasGroup, WinText));
-        int stars = _ravenCounter.AmountOfRavens+1;
+        int stars = _ravenCounter.AmountOfRavens + 1 ;
+        Debug.Log(stars);
 
         if (LevelSelectionMenuManager.currentLevel - 1 == LevelSelectionMenuManager.unlockedLevels)
         {
@@ -157,7 +158,8 @@ public class LevelController : MonoBehaviour
     public void LoadNextLevel()
     {
         LevelSelectionMenuManager.currentLevel++;
-        SceneManager.LoadScene(LevelSelectionMenuManager.currentLevel);
+        Debug.Log(LevelSelectionMenuManager.currentLevel);
+        SceneManager.LoadScene("Level"+LevelSelectionMenuManager.currentLevel);
     }
 
    

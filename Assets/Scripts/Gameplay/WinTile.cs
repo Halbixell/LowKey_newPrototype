@@ -6,6 +6,7 @@ public class WinTile : MonoBehaviour
 {
 
     [SerializeField] private LevelController _levelcontroller;
+    [SerializeField] private RavenCounter _ravenCounter;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +16,7 @@ public class WinTile : MonoBehaviour
             Debug.Log("Won the Level!");
             _levelcontroller.LevelWon();
         }
+        _ravenCounter.RavenImages[2].sprite = _ravenCounter.Collected;
     }
 
 

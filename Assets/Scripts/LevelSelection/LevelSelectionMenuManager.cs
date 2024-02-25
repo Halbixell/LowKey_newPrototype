@@ -77,7 +77,7 @@ public class LevelSelectionMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentLevel = 0;
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
 
         for (int i=0; i<levelObjects.Length; i++)

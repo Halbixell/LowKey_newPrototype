@@ -10565,6 +10565,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
+      propertyPath: _ravenCounter
+      value: 
+      objectReference: {fileID: 873495103}
+    - target: {fileID: 5964117530086164960, guid: 165fa22346c7a4042aad067df66c55fb, type: 3}
       propertyPath: _levelcontroller
       value: 
       objectReference: {fileID: 1736023927}
@@ -10736,6 +10740,10 @@ PrefabInstance:
       value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 6406052932501237927, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
+      propertyPath: RavenIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6406052932501237927, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: _ravenCounter
       value: 
       objectReference: {fileID: 873495103}
@@ -10789,7 +10797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6561708681732937908, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: RavenIndex
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6561708681732937908, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: _ravenCounter
