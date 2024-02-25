@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HowToPlayScript : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class HowToPlayScript : MonoBehaviour
     private int StepCounter = 0;
     public GameObject[] AnimationSteps;
     public Image EndHowToPlay;
+
+    public MovePlayerPreview _player;
+
+    private float timer = 0;
 
 
     // Start is called before the first frame update
@@ -31,9 +36,15 @@ public class HowToPlayScript : MonoBehaviour
             switch (StepCounter)
             {
                 case 1:
-                    MoveImageToTarget();
+                    Vector2 targetPosition = new Vector2(-305, -260);
+                    MoveImageToTarget(targetPosition);
                     break;
-                case 2:
+                case 3:
+                    Vector2 targetPosition2 = new Vector2(336, -265);
+                    MoveImageToTargetAndDelete(targetPosition2);
+                    break;
+                case 5:
+                    _player.MovePlayer();
                     break;
 
 
@@ -46,63 +57,65 @@ public class HowToPlayScript : MonoBehaviour
         }
     }
 
-    //public void AnimateHel()
-    //{
-    //    RectTransform Hel = FirstStep_AnimateHel.rectTransform;
-    //    Vector3 target = new Vector3(-305, -260, 0);
-    //    float distance = Vector3.Distance(Hel.localPosition, target);
-    //    float duration = distance / 0.1f;
-    //    Debug.Log(duration);
-    //    Debug.Log(distance);
-    //    float elapsedTime = 0f;
-    //    float t = 0;
 
-    //    for(elapsedTime = 0; elapsedTime<duration; elapsedTime+= Time.deltaTime)
-    //    {
-    //        // Calculate the interpolation factor
-    //        t = elapsedTime / duration;
-    //        //Debug.Log(t);
-
-    //        // Lerp between the start and target positions
-    //        Hel.anchoredPosition = Vector3.Lerp(Hel.localPosition, target, t);
-
-    //        // Update the elapsed time
-    //        elapsedTime += Time.deltaTime;
-    //    }
-
- 
-
-    //}
-
-    public float moveSpeed = 10000000f;
+    public int moveSpeed = 100000;
 
     private bool isMoving = false;
 
-    public void MoveImageToTarget()
+    public void MoveImageToTarget(Vector2 targetPosition)
     {
         if (!isMoving)
         {
-            StartCoroutine(MoveCoroutine());
+            StartCoroutine(MoveCoroutine(targetPosition));
         }
     }
 
-    private IEnumerator MoveCoroutine()
+    private IEnumerator MoveCoroutine(Vector2 targetPosition)
     {
+        yield return new WaitForSeconds(2f);
         RectTransform imageTransform = FirstStep_AnimateHel.rectTransform;
-        Vector2 targetPosition = new Vector2(-305, -260);
         isMoving = true;
-        Vector2 initialPosition = imageTransform.anchoredPosition;
-        float distance = Vector2.Distance(initialPosition, targetPosition);
-        float startTime = Time.time;
 
         while (imageTransform.anchoredPosition != targetPosition)
         {
-            float coveredDistance = (Time.time - startTime) * moveSpeed;
-            float fracJourney = coveredDistance / distance;
-            imageTransform.anchoredPosition = Vector2.Lerp(initialPosition, targetPosition, fracJourney);
+            imageTransform.localPosition = Vector3.MoveTowards(imageTransform.localPosition, targetPosition, moveSpeed * 5 * Time.deltaTime);
+            yield return null;
+        }
+
+        
+        isMoving = false;
+    }
+
+
+    public void MoveImageToTargetAndDelete(Vector2 targetPosition)
+    {
+        if (!isMoving)
+        {
+            StartCoroutine(MoveandDeleteCoroutine(targetPosition));
+        }
+    }
+
+    private IEnumerator MoveandDeleteCoroutine(Vector2 targetPosition)
+    {
+        RectTransform imageTransform = FirstStep_AnimateHel.rectTransform;
+        isMoving = true;
+
+        while (imageTransform.anchoredPosition != targetPosition)
+        {
+            imageTransform.localPosition = Vector3.MoveTowards(imageTransform.localPosition, targetPosition, moveSpeed * 5 * Time.deltaTime);
             yield return null;
         }
 
         isMoving = false;
+        yield return new WaitForSeconds(2f);
+        Destroy(imageTransform.gameObject);
+    }
+
+
+    public void LoadLevelSelection()
+    {
+        SceneManager.LoadScene("LevelSelector");
     }
 }
+
+

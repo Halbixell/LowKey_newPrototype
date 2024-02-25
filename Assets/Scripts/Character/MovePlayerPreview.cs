@@ -1,52 +1,50 @@
 using System.Collections;
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+
+
+public class MovePlayerPreview : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public ListOfMoveSlots inventorySlots;
-    private Item moveOption;
-    public Button StartMovement;
-    protected CharacterAnimator _animator;
 
-    private List<ItemEntry> MoveList;
+    public List<Item> MoveList;
+    public List<EnemyController> Enemies;
+    public float moveSpeed = 5;
+    private int MoveLooper;
     private bool isMoving = false;
 
-    private int MoveLooper = -1;
+    public CharacterAnimator _animator;
 
-    [SerializeField] private LevelController _levelController;
+    public Item FirstMove;
+    public Item SecondMove;
+    public Item ThirdMove;
 
-    public delegate void PlayerTurnStartAction();
 
-    public event PlayerTurnStartAction OnPlayerTurnStart;
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     private void Start()
     {
         _animator = GetComponent<CharacterAnimator>();
-        _levelController = FindObjectOfType<LevelController>();
+
     }
 
-    public void MovePlayer(List<ItemEntry> MoveOptions, List<EnemyController> Enemies)
+    public void MovePlayer()
     {
         if (!isMoving)
         {
             isMoving = true;
-            StartCoroutine(MovePlayerCoroutine(MoveOptions, Enemies));
+            StartCoroutine(MovePlayerCoroutine());
 
-            if (OnPlayerTurnStart != null)
-            {
-                OnPlayerTurnStart();
-            }
         }
     }
 
-
-    private IEnumerator MovePlayerCoroutine(List<ItemEntry> MoveOptions, List<EnemyController> Enemies)
+    private IEnumerator MovePlayerCoroutine()
     {
-        MoveList = MoveOptions;
+        
         if (MoveList.Count != 0)
         {
             //Debug.Log($"MoveList.Count: {MoveList.Count}");
@@ -58,13 +56,12 @@ public class PlayerController : MonoBehaviour
                     enemy.HandleEnemyTurn(MoveLooper);
                 }
 
-                Item moveOption = MoveList[MoveOptionIndex].move;
-                int Direction = MoveList[MoveOptionIndex].direction;
+                Item moveOption = MoveList[MoveOptionIndex];
+                int Direction = 0;
                 List<Vector2> originalMoves = new List<Vector2>(moveOption.Moves);
                 for (int i = 0; i < originalMoves.Count; i++)
                 {
-                    if (!_levelController.StopMovement)
-                    {
+                    
                         Vector2 moveVector = originalMoves[i];
                         int[] Directions = { 0, 90, 180, 270 };
                         Vector2 temp;
@@ -80,8 +77,7 @@ public class PlayerController : MonoBehaviour
 
                         Vector3 targetPosition = transform.position + new Vector3(temp.x, temp.y, 0f);
 
-                        if (IsPathClear(targetPosition))
-                        {
+                        
 
                             while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
                             {
@@ -91,13 +87,7 @@ public class PlayerController : MonoBehaviour
 
                             yield return new WaitForSeconds(0.05f);
                             _animator.IsMoving = false;
-                        }
-                        else
-                        {
-                            yield return new WaitForSeconds(0.6f);
-                            _animator.IsMoving = false;
-                        }
-                    }
+                    
 
                 }
                 yield return new WaitForSeconds(0.4f);
@@ -112,30 +102,5 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
         //MoveList.Clear();
         yield return null;
-    }
-
-    public void NotifyMoveOptionsChanged(List<ItemEntry> MoveOptionList)
-    {
-        if (!isMoving)
-        {
-            MoveList = MoveOptionList;
-        }
-    }
-
-    protected bool IsPathClear(Vector3 targetPos)
-    {
-        var diff = targetPos - transform.position;
-        var dir = diff.normalized;
-
-        LayerMask layerMask = LayerMask.GetMask("NonWalkable", "Player", "Enemy");
-
-        return !Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f,
-            dir, diff.magnitude - 1,
-            layerMask);
-    }
-
-    public void PlayerDetected()
-    {
-        _levelController.LevelLost();
     }
 }

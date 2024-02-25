@@ -34,7 +34,8 @@ public class CollectibleRaven : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerController player = collision.GetComponent<PlayerController>();
-        if (player != null)
+        MovePlayerPreview other = collision.GetComponent<MovePlayerPreview>();
+        if (player != null || other != null)
         {
             FlyAway();
             _ravenCounter.CollectRaven(RavenIndex-1);

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8114670352727752532}
   - component: {fileID: 4564852709811256818}
   - component: {fileID: 116008979208838561}
+  - component: {fileID: 723021476669436622}
   m_Layer: 6
   m_Name: Player_Preview
   m_TagString: Untagged
@@ -167,3 +168,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &723021476669436622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364225024169215126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76b4efaa195cce48a30b8edf4f5211a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemies: []
+  moveSpeed: 5
+  _animator: {fileID: 8114670352727752532}
