@@ -159,7 +159,7 @@ MonoBehaviour:
   - {fileID: 3953066233502503338}
   - {fileID: 65626756327371422}
   - {fileID: 4535252867127398275}
-  - {fileID: 0}
+  - {fileID: 1777345888880872787}
 --- !u!114 &3932399822890046357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +369,11 @@ MonoBehaviour:
   _player: {fileID: 3795125480830091832}
   AdjustX: {x: 1, y: 0, z: 0}
   AdjustY: {x: 0, y: 1, z: 0}
+--- !u!61 &1777345888880872787 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5380884208237716841, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
+  m_PrefabInstance: {fileID: 5910652383749892154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3718225363106884642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7034360119868458008, guid: ecc2475120f206a43b74c6b0cdf9667e, type: 3}
