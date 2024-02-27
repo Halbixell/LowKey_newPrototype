@@ -1925,7 +1925,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 543f471b64d2be7439afbddbedb58a2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7bcb0af84fbc854492dab0a51ccb2ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2203,8 +2203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicButton: {fileID: 3339017581731695046}
   _musicImage: {fileID: 4211336659394409347}
-  _muted: {fileID: 21300000, guid: 0eeba950598cea041bf25b469f0dc857, type: 3}
-  _unmuted: {fileID: 21300000, guid: 96ca4d9272d6e8a43be850c4de362328, type: 3}
+  _muted: {fileID: 21300000, guid: ac9fd84802bd81d47be7e97dacbd80f5, type: 3}
+  _unmuted: {fileID: 21300000, guid: 75e0d5972a8e7bc40b825653e27e609e, type: 3}
   _hintergrundmusik: {fileID: 0}
 --- !u!1 &5415216731648360319
 GameObject:
@@ -3045,6 +3045,7 @@ GameObject:
   - component: {fileID: 6922807463477182898}
   - component: {fileID: 4986712124713059155}
   - component: {fileID: 4631576570404062577}
+  - component: {fileID: 3256895044095378869}
   m_Layer: 5
   m_Name: SoundMute
   m_TagString: Untagged
@@ -3155,6 +3156,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3256895044095378869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7202653362457882845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205a696de25f6a941849f2d379cc6c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicButton: {fileID: 4631576570404062577}
+  _musicImage: {fileID: 6399116488061223866}
+  _muted: {fileID: 21300000, guid: 8be55e2461220d44cb7dd0f1dcee7a07, type: 3}
+  _unmuted: {fileID: 21300000, guid: a7bcb0af84fbc854492dab0a51ccb2ea, type: 3}
+  _hintergrundmusik: {fileID: 0}
 --- !u!1 &7332260676791127897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,7 +3523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 96ca4d9272d6e8a43be850c4de362328, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 75e0d5972a8e7bc40b825653e27e609e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

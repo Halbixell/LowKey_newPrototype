@@ -18843,6 +18843,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1896463008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7202653362457882845, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+  m_PrefabInstance: {fileID: 1050797188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1896463009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4631576570404062577, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+  m_PrefabInstance: {fileID: 1050797188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896463008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1896463010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896463008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205a696de25f6a941849f2d379cc6c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicButton: {fileID: 1896463009}
+  _musicImage: {fileID: 0}
+  _muted: {fileID: 0}
+  _unmuted: {fileID: 0}
+  _hintergrundmusik: {fileID: 0}
 --- !u!1 &2012368087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2569599363875247006, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
