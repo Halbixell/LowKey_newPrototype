@@ -13,6 +13,8 @@ public class LevelSelectionMenuManager : MonoBehaviour
     public static int unlockedLevels;
     public LevelObjectScript[] levelObjects;
 
+    [SerializeField] private Button HowToPlayButton;
+
     public void OnClickLevel(int NumberOfLevel)
     {
         currentLevel = NumberOfLevel;
@@ -77,6 +79,8 @@ public class LevelSelectionMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HowToPlayButton.onClick.AddListener(LoadHowToPlay);
+
         currentLevel = 0;
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
 
@@ -94,5 +98,10 @@ public class LevelSelectionMenuManager : MonoBehaviour
         }
     }
 
-    
+
+    private void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
 }
