@@ -15,6 +15,7 @@ public class HowToPlayScript : MonoBehaviour
     public Image EndHowToPlay;
 
     public MovePlayerPreview _player;
+    public GameObject _direction;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,7 @@ public class HowToPlayScript : MonoBehaviour
                     break;
                 case 5:
                     _player.MovePlayer();
+                    _direction.SetActive(false);
                     break;
 
 
