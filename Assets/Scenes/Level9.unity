@@ -330,6 +330,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1974358631}
     m_Modifications:
     - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1569463700}
+    - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: RotationOffset
       value: 1
       objectReference: {fileID: 0}
@@ -381,6 +385,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655543829900898060, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_Name
       value: Odin
@@ -801,6 +817,18 @@ PrefabInstance:
     - target: {fileID: 3868415479315621743, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1569463700}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
@@ -31233,6 +31261,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1569463700}
+    - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: RotationOffset
       value: 1
       objectReference: {fileID: 0}
@@ -31240,6 +31272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freya
       objectReference: {fileID: 0}
+    - target: {fileID: 7673412787197285574, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -994981662, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8233358033549967057, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: PopupWithAnimation
       value: 
@@ -31441,6 +31477,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 2019967606}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 1704318193}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -32512,6 +32552,11 @@ PrefabInstance:
       objectReference: {fileID: 381632349}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+--- !u!82 &1704318193 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 1704318192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1727880384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8769272842056224183, guid: 7fafa232d0c31224cb0acdc99db965bc, type: 3}

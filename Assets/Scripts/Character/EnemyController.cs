@@ -1,6 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class EnemyController : MonoBehaviour
 {
@@ -23,6 +25,11 @@ public class EnemyController : MonoBehaviour
 
     private PlayerController _player;
 
+    [Header ("Directions")]
+    [SerializeField] Button StartButton;
+    public GameObject StartDirection;
+
+
 
     private void Start()
     {
@@ -32,7 +39,15 @@ public class EnemyController : MonoBehaviour
         RotationOffset = (RotationOffset % 4);
 
         _player = FindObjectOfType<PlayerController>();
+
+        StartButton.onClick.AddListener(HideDirections);
     }
+
+    void HideDirections()
+    {
+        StartDirection.gameObject.SetActive(false);
+    }
+
 
     public void HandleEnemyTurn(int MoveLooper)
     {

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &53030433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7715789195026355178, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+  m_PrefabInstance: {fileID: 1649961995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &61187770
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +667,10 @@ PrefabInstance:
       value: 0.0034358203
       objectReference: {fileID: 0}
     - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 789741134}
+    - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: RotationOffset
       value: 3
       objectReference: {fileID: 0}
@@ -749,6 +758,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5655543829900898060, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1400168163, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_Name
       value: Odin
@@ -1258,11 +1271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 874905321117259681, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 117.4
+      value: 116.5
       objectReference: {fileID: 0}
     - target: {fileID: 874905321117259681, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -116.5
+      value: -139
       objectReference: {fileID: 0}
     - target: {fileID: 968058666375651402, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
@@ -1328,6 +1341,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1007349629}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 811426105}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -18712,6 +18729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall
       objectReference: {fileID: 0}
+    - target: {fileID: 2939360188458060606, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1400168163, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 4689141729872762142, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_Size.x
       value: 0.3763097
@@ -18729,9 +18750,17 @@ PrefabInstance:
       value: 0.017179146
       objectReference: {fileID: 0}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 789741134}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: RotationOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartDirection
+      value: 
+      objectReference: {fileID: 53030433}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
       value: 2

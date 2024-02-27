@@ -297,6 +297,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1108849235}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor
@@ -11544,6 +11552,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1254834627}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 1254834629}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -12645,6 +12657,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365f73b3fc0722848be6eec4eb1c77b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1254834629 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 1254834626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1274431266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12660,6 +12677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall
       objectReference: {fileID: 0}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1108849235}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
       value: 2
@@ -12707,6 +12728,14 @@ PrefabInstance:
     - target: {fileID: 5231904355883655288, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
@@ -12826,9 +12855,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939360188458060606, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1108849235}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: RotationOffset
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
@@ -12877,6 +12914,14 @@ PrefabInstance:
     - target: {fileID: 5231904355883655288, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}

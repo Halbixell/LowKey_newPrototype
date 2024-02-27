@@ -371,6 +371,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1936079304}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 1936079306}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1115,13 +1119,29 @@ PrefabInstance:
       value: 0.02499444
       objectReference: {fileID: 0}
     - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 40184398}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: RotationOffset
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.27
       objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9075478279774223893, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1569084501, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
 --- !u!1 &216217003
@@ -7785,13 +7805,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 40184398}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: RotationOffset
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9075478279774223893, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2127616340, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
 --- !u!114 &1530567205 stripped
@@ -7860,6 +7892,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 40184398}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor
@@ -16490,6 +16526,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 40184398}
+    - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: hitColliders.Array.data[3]
       value: 
       objectReference: {fileID: 1895173831}
@@ -16497,6 +16537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freya
       objectReference: {fileID: 0}
+    - target: {fileID: 7673412787197285574, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -306441380, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8233358033549967057, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: PopupWithAnimation
       value: 
@@ -16819,6 +16863,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365f73b3fc0722848be6eec4eb1c77b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1936079306 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 1936079303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2019438089
 PrefabInstance:
   m_ObjectHideFlags: 0

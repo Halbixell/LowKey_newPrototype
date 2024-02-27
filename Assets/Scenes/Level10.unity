@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939360188458060606, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4068510256854347222, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_Size.x
       value: 0.6736814
@@ -154,6 +158,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.1386016
       objectReference: {fileID: 0}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
       value: 2
@@ -201,6 +209,14 @@ PrefabInstance:
     - target: {fileID: 5231904355883655288, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
@@ -276,13 +292,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: RotationOffset
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor
       objectReference: {fileID: 0}
+    - target: {fileID: 9075478279774223893, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2127616340, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
 --- !u!4 &118172053 stripped
@@ -748,9 +776,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939360188458060606, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: RotationOffset
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
@@ -799,6 +835,14 @@ PrefabInstance:
     - target: {fileID: 5231904355883655288, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
@@ -954,6 +998,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1859977057}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 1677864628}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1564,6 +1612,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1604018120}
     m_Modifications:
+    - target: {fileID: 53097920656068775, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 53097920656068775, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2451625541009810568, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1609,6 +1665,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
+    - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: RotationOffset
       value: 4
       objectReference: {fileID: 0}
@@ -1616,6 +1676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freya (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7673412787197285574, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -306441380, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8233358033549967057, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: PopupWithAnimation
       value: 
@@ -1652,9 +1716,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heimdall
       objectReference: {fileID: 0}
+    - target: {fileID: 2939360188458060606, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: RotationOffset
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
@@ -1703,6 +1775,14 @@ PrefabInstance:
     - target: {fileID: 5231904355883655288, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
@@ -1908,6 +1988,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1604018120}
     m_Modifications:
     - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
+    - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: RotationOffset
       value: 3
       objectReference: {fileID: 0}
@@ -1959,6 +2043,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655543829900898060, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1400168163, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_Name
       value: Odin
@@ -2004,6 +2100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1604018120}
     m_Modifications:
+    - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
     - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: RotationOffset
       value: 1
@@ -2056,6 +2156,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655543829900898060, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_Name
       value: Odin (1)
@@ -2662,13 +2770,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
+    - target: {fileID: 4490623103471501723, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: RotationOffset
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339079542328840848, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8302913204544667640, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
       propertyPath: m_Name
       value: Thor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9075478279774223893, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 934298356, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
 --- !u!4 &1629360979 stripped
@@ -2687,6 +2807,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3b49ccfa4d4024e931372637657199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1677864628 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 393302034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1690972691 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5825354243976014568, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -48859,6 +48984,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 74145720}
+    - target: {fileID: 3025107210083762812, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: RotationOffset
       value: 3
       objectReference: {fileID: 0}
@@ -48882,6 +49011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Freya
       objectReference: {fileID: 0}
+    - target: {fileID: 7673412787197285574, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1355825232, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8233358033549967057, guid: 1cb69f3bc171003439154cfee3b360e0, type: 3}
       propertyPath: PopupWithAnimation
       value: 

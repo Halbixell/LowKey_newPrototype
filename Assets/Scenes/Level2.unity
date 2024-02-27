@@ -533,6 +533,11 @@ PrefabInstance:
       objectReference: {fileID: 118291934}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+--- !u!82 &748099667 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 748099666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &771779144 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2769516372103839812, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
@@ -1915,6 +1920,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 488829771}
+    - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _hintergrundmusik
+      value: 
+      objectReference: {fileID: 748099667}
     - target: {fileID: 2005924314042490543, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11387,6 +11396,10 @@ PrefabInstance:
       value: 0.0035799444
       objectReference: {fileID: 0}
     - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1181481902}
+    - target: {fileID: 3795125480830091832, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: RotationOffset
       value: 2
       objectReference: {fileID: 0}
@@ -11478,6 +11491,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5221212975956155939, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655543829900898060, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2127616340, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     - target: {fileID: 8773791621313821787, guid: 8b1abb270f8c7ce41a138a1d087da608, type: 3}
       propertyPath: m_Name
       value: Odin
@@ -11922,6 +11943,10 @@ PrefabInstance:
       value: 0.012025714
       objectReference: {fileID: 0}
     - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: StartButton
+      value: 
+      objectReference: {fileID: 1181481902}
+    - target: {fileID: 4856516200385840780, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: hitColliders.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -11984,6 +12009,14 @@ PrefabInstance:
     - target: {fileID: 8585574389546989098, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
       propertyPath: m_Offset.y
       value: 0.0030064583
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180525841457164260, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3266211f64d9e7458c1bb1d8bf3dde0, type: 3}
