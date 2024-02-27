@@ -40,7 +40,7 @@ public class HowToPlayScript : MonoBehaviour
                     MoveImageToTarget(targetPosition);
                     break;
                 case 3:
-                    Vector2 targetPosition2 = new Vector2(336, -265);
+                    Vector2 targetPosition2 = new Vector2(365, -265);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 5:
@@ -72,7 +72,7 @@ public class HowToPlayScript : MonoBehaviour
                     MoveImageToTarget(targetPosition);
                     break;
                 case 3:
-                    Vector2 targetPosition2 = new Vector2(336, -265);
+                    Vector2 targetPosition2 = new Vector2(365, -265);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 5:
