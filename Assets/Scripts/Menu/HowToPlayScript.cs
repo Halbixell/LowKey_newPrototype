@@ -16,9 +16,6 @@ public class HowToPlayScript : MonoBehaviour
 
     public MovePlayerPreview _player;
 
-    private float timer = 0;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +33,11 @@ public class HowToPlayScript : MonoBehaviour
             switch (StepCounter)
             {
                 case 1:
-                    Vector2 targetPosition = new Vector2(-305, -260);
+                    Vector2 targetPosition = new Vector2(-141, -172);
                     MoveImageToTarget(targetPosition);
                     break;
                 case 3:
-                    Vector2 targetPosition2 = new Vector2(365, -265);
+                    Vector2 targetPosition2 = new Vector2(210, -172);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 5:
@@ -68,11 +65,11 @@ public class HowToPlayScript : MonoBehaviour
             switch (StepCounter)
             {
                 case 1:
-                    Vector2 targetPosition = new Vector2(-305, -260);
+                    Vector2 targetPosition = new Vector2(-141, -172);
                     MoveImageToTarget(targetPosition);
                     break;
                 case 3:
-                    Vector2 targetPosition2 = new Vector2(365, -265);
+                    Vector2 targetPosition2 = new Vector2(210, -172);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 5:
