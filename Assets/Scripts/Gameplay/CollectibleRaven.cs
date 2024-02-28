@@ -51,6 +51,7 @@ public class CollectibleRaven : MonoBehaviour
         if (!isTriggered)
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(gameObject);
             Instantiate(FlyingRaven, transform.position, transform.rotation);
             isTriggered = true;
             FlownAway = true;

@@ -46,8 +46,6 @@ public class LevelSelectionMenuManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("stars" + i.ToString(), 0);
         }
-        UnlockedLevelsScript.freigeschaltenesLevel = 1;
-        Debug.Log("Freigeschalten bei Reset:" + UnlockedLevelsScript.freigeschaltenesLevel);
         unlockedLevels = 0;
         PlayerPrefs.SetInt("unlockedLevels", unlockedLevels);
         PlayerPrefs.Save();
@@ -85,10 +83,9 @@ public class LevelSelectionMenuManager : MonoBehaviour
         HowToPlayButton.onClick.AddListener(LoadHowToPlay);
         currentLevel = 0;
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
-        Debug.Log("freigeschalten bei Start: " + UnlockedLevelsScript.freigeschaltenesLevel);
         for (int i=0; i<levelObjects.Length; i++)
         {//unlockedLevels >= i
-            if (UnlockedLevelsScript.freigeschaltenesLevel-1 >= i)
+            if (unlockedLevels >= i)
             {
                 levelObjects[i].LevelButton.interactable = true;
                 int stars = PlayerPrefs.GetInt("stars" + i.ToString(), 0);

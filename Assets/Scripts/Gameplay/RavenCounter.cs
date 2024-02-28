@@ -33,6 +33,7 @@ public class RavenCounter : MonoBehaviour
         RavenImages[Ravenindex].sprite = Collected;
         if (RavenImages[Ravenindex].sprite != notCollected)
         {
+            Debug.Log("<color=green> JETZT!!!! </color>");
             AmountOfRavens = AmountOfRavens + 1;
         }
         

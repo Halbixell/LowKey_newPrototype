@@ -105,24 +105,17 @@ public class LevelController : MonoBehaviour
        
         FindObjectOfType<SoundManager>().StopMusic("Knarksen");
     
-
+        
         StopMovement = true;
        
         LevelWonCanvas.gameObject.SetActive(true);
         StartCoroutine(FadeInScreen(LevelWonCanvasGroup, WinText));
         int stars = _ravenCounter.AmountOfRavens + 1 ;
+        
 
-        Debug.Log("current level bei Level won:" + LevelSelectionMenuManager.currentLevel);
-        Debug.Log("freigeschaltenes level bei Level won:" + UnlockedLevelsScript.freigeschaltenesLevel);
-        if (LevelSelectionMenuManager.currentLevel  == UnlockedLevelsScript.freigeschaltenesLevel)
+        if (LevelSelectionMenuManager.currentLevel-1  == LevelSelectionMenuManager.unlockedLevels)
         {
-            UnlockedLevelsScript.freigeschaltenesLevel++;
-            Debug.Log("in if schleife ist freigeschaltenes Level es:" +UnlockedLevelsScript.freigeschaltenesLevel);
-            //UnlockedLevelsScript.freigeschaltenesLevel++;
-            PlayerPrefs.SetInt("freigeschalteneLevel", UnlockedLevelsScript.freigeschaltenesLevel);
-            Debug.Log("PlayerPrefs freigeschlatene Level: " + PlayerPrefs.GetInt(UnlockedLevelsScript.freigeschaltenesLevel.ToString()));
-            
-
+           
             LevelSelectionMenuManager.unlockedLevels++;
             PlayerPrefs.SetInt("unlockedLevels", LevelSelectionMenuManager.unlockedLevels);
 
@@ -186,13 +179,7 @@ public class LevelController : MonoBehaviour
             LevelSelectionMenuManager.currentLevel++;
             PlayerPrefs.SetInt("currentLevel", LevelSelectionMenuManager.currentLevel);
             PlayerPrefs.Save();
-            Debug.Log("In Next Level vor if: Current Level: " + LevelSelectionMenuManager.currentLevel + "  freigeschaltene Level: " + UnlockedLevelsScript.freigeschaltenesLevel);
-            //if (LevelSelectionMenuManager.currentLevel >= UnlockedLevelsScript.freigeschaltenesLevel)
-           // {
-                
-               // UnlockedLevelsScript.freigeschaltenesLevel = LevelSelectionMenuManager.currentLevel;
-               // Debug.Log("In Next Level: Current Level in if: " + LevelSelectionMenuManager.currentLevel + "  freigeschaltene Level: " + UnlockedLevelsScript.freigeschaltenesLevel);
-           // }
+           
             
             SceneManager.LoadScene("Level" + LevelSelectionMenuManager.currentLevel);
         }
