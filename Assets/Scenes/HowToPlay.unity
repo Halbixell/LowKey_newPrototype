@@ -4232,6 +4232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thor
       objectReference: {fileID: 0}
+    - target: {fileID: 9075478279774223893, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1569084501, guid: 9eb512368b7c29e418cb75b47a5ec474, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d66a25519eb90643910fb447fc203ea, type: 3}
 --- !u!1 &530085614
@@ -7062,6 +7066,7 @@ GameObject:
   - component: {fileID: 891802281}
   - component: {fileID: 891802283}
   - component: {fileID: 891802282}
+  - component: {fileID: 891802284}
   m_Layer: 5
   m_Name: "Platz f\xFCr Text"
   m_TagString: Untagged
@@ -7131,6 +7136,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891802280}
   m_CullTransparentMesh: 1
+--- !u!114 &891802284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891802280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22fd65e4b3d9cfb468739a8d596b593b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 2
+    clip: {fileID: 8300000, guid: 607e59180b0ff4d419ebe7e71850db74, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 0
+    clip: {fileID: 8300000, guid: 220ebfda9dbd37f4f9e394265873eea7, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 1
+    clip: {fileID: 8300000, guid: 8a14457ef0b6ce646acd343d4b7ba861, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: ed385c714a9b2e34cbfc2c8e7412aa71, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &917226839
 GameObject:
   m_ObjectHideFlags: 0

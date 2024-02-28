@@ -26,9 +26,10 @@ public class SkriptVideosHTP : MonoBehaviour
         {
             VideoOfMove[j].SetActive(false);
             TextOfMove[j].SetActive(false);
+            FindObjectOfType<SoundManager>().StopMusic(j.ToString());
         }
 
-
+        FindObjectOfType<SoundManager>().Play(i.ToString());
         VideoOfMove[i].SetActive(true);
         TextOfMove[i].SetActive(true);
     }
