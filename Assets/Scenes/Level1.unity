@@ -1320,6 +1320,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -143
       objectReference: {fileID: 0}
+    - target: {fileID: 952219877651197389, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 968058666375651402, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
       value: 
@@ -1384,6 +1388,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1007349629}
+    - target: {fileID: 1688526590793242466, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: _hintergrundmusik
       value: 
@@ -1580,6 +1588,10 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1007349629}
+    - target: {fileID: 3439447856770136378, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831327503110187992, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
       value: 
@@ -1712,6 +1724,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 97
       objectReference: {fileID: 0}
+    - target: {fileID: 5078618524887098843, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5078618524887098843, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5086575152219222712, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: inventoryManager
       value: 
@@ -1732,6 +1752,14 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 1007349629}
+    - target: {fileID: 5319283983337598491, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319283983337598491, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5324767631734842069, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: _inventoryManager
       value: 
@@ -1874,6 +1902,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943910089785332590, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291453079669345016, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292045173861532986, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
