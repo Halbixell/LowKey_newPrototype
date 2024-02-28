@@ -124,6 +124,10 @@ public class PlayerController : MonoBehaviour
         if(!WinCanvas.isActiveAndEnabled)
         {
             LoseCanvas.gameObject.SetActive(true);
+
+            FindObjectOfType<SoundManager>().StopMusic("Knarksen");
+
+            
         }
 
         yield return null;

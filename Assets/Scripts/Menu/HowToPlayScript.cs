@@ -17,6 +17,8 @@ public class HowToPlayScript : MonoBehaviour
     public MovePlayerPreview _player;
     public GameObject _direction;
 
+    public SoundManager _soundManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,16 @@ public class HowToPlayScript : MonoBehaviour
 
     public void ButtonPressNext()
     {
+        for(int s=0; s < _soundManager.sounds.Length; s++)
+        {
+            string name = _soundManager.sounds[s].name;
+            _soundManager.StopMusic(name);
+
+        }
+       
+
+
+
         if (StepCounter + 1 < AnimationSteps.Length)
         {
             AnimationSteps[StepCounter].SetActive(false);

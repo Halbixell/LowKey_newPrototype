@@ -38,7 +38,10 @@ public class CollectibleRaven : MonoBehaviour
         if (player != null || other != null)
         {
             FlyAway();
+          
             FindObjectOfType<SoundManager>().Play("Raben");
+            
+           
             _ravenCounter.CollectRaven(RavenIndex-1);
         }
     }

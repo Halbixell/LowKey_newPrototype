@@ -22,11 +22,32 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void PlayMovesSound(string name)
+    {
+        foreach (Sounds k in sounds)
+        {
+
+            k.source.Stop();
+        }
+
+        if (SoundMuteScript.muted == false)
+        {
+            Sounds s = Array.Find(sounds, sounds => sounds.name == name);
+            s.source.Play();
+        }
+        
+    }
+
+
     public void Play(string name)
     {
-        Sounds s=Array.Find(sounds,  sounds=>sounds.name == name);
-        s.source.Play();
         
+        if (SoundMuteScript.muted == false)
+        {
+            Sounds s = Array.Find(sounds, sounds => sounds.name == name);
+            s.source.Play();
+
+        }
 
         
     }

@@ -31779,6 +31779,10 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 2019967606}
+    - target: {fileID: 5106151994446928287, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: _soundManager
+      value: 
+      objectReference: {fileID: 1704318194}
     - target: {fileID: 5284011286675728123, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
       value: 
@@ -32667,6 +32671,17 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 2238389945389109606, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
   m_PrefabInstance: {fileID: 1704318192}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1704318194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6241204810023446812, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+  m_PrefabInstance: {fileID: 1704318192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22fd65e4b3d9cfb468739a8d596b593b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1727880384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8769272842056224183, guid: 7fafa232d0c31224cb0acdc99db965bc, type: 3}

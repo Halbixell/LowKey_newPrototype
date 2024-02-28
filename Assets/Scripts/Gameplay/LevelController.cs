@@ -79,7 +79,10 @@ public class LevelController : MonoBehaviour
 
     void StartButtonClicked()
     {
-        FindObjectOfType<SoundManager>().Play("Knarksen");
+       
+            FindObjectOfType<SoundManager>().Play("Knarksen");
+        
+        
         StopMovement = false;
         MoveOptionsAndRotations = _listOfInventorySlots.CollectMoveOptionsandRotation();
         _player.MovePlayer(MoveOptionsAndRotations, Enemies);
@@ -87,6 +90,10 @@ public class LevelController : MonoBehaviour
 
     public void LevelLost()
     {
+      
+        FindObjectOfType<SoundManager>().StopMusic("Knarksen");
+       
+
         StopMovement = true;
         Debug.Log("Level is lost!");
         GameOverCanvas.gameObject.SetActive(true);
@@ -95,6 +102,10 @@ public class LevelController : MonoBehaviour
 
     public void LevelWon()
     {
+       
+        FindObjectOfType<SoundManager>().StopMusic("Knarksen");
+    
+
         StopMovement = true;
         Debug.Log("Level is won");
         LevelWonCanvas.gameObject.SetActive(true);
@@ -162,9 +173,16 @@ public class LevelController : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        LevelSelectionMenuManager.currentLevel++;
-        Debug.Log(LevelSelectionMenuManager.currentLevel);
-        SceneManager.LoadScene("Level"+LevelSelectionMenuManager.currentLevel);
+        if (LevelSelectionMenuManager.currentLevel != 10)
+        {
+            LevelSelectionMenuManager.currentLevel++;
+            Debug.Log(LevelSelectionMenuManager.currentLevel);
+            SceneManager.LoadScene("Level" + LevelSelectionMenuManager.currentLevel);
+        }
+        else
+        {
+            SceneManager.LoadScene("AlphaundOmega");
+        }
     }
 
    public void LoadHowToPlay()

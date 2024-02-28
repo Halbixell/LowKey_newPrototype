@@ -3045,7 +3045,7 @@ GameObject:
   - component: {fileID: 6922807463477182898}
   - component: {fileID: 4986712124713059155}
   - component: {fileID: 4631576570404062577}
-  - component: {fileID: 3256895044095378869}
+  - component: {fileID: 5106151994446928287}
   m_Layer: 5
   m_Name: SoundMute
   m_TagString: Untagged
@@ -3155,8 +3155,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4986712124713059155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &3256895044095378869
+      m_Calls:
+      - m_Target: {fileID: 5106151994446928287}
+        m_TargetAssemblyTypeName: SoundMuteScript, Assembly-CSharp
+        m_MethodName: OnClickMuteSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5106151994446928287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3165,14 +3177,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7202653362457882845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 205a696de25f6a941849f2d379cc6c2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8a7d69b29f5db49b818ed29e80f7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicButton: {fileID: 4631576570404062577}
   _musicImage: {fileID: 6399116488061223866}
-  _muted: {fileID: 21300000, guid: 8be55e2461220d44cb7dd0f1dcee7a07, type: 3}
-  _unmuted: {fileID: 21300000, guid: a7bcb0af84fbc854492dab0a51ccb2ea, type: 3}
-  _hintergrundmusik: {fileID: 0}
+  _mutedSound: {fileID: 21300000, guid: 8be55e2461220d44cb7dd0f1dcee7a07, type: 3}
+  _unmutedSound: {fileID: 21300000, guid: a7bcb0af84fbc854492dab0a51ccb2ea, type: 3}
+  _soundManager: {fileID: 0}
 --- !u!1 &7332260676791127897
 GameObject:
   m_ObjectHideFlags: 0
