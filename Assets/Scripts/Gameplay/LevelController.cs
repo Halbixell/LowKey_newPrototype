@@ -79,6 +79,7 @@ public class LevelController : MonoBehaviour
 
     void StartButtonClicked()
     {
+        FindObjectOfType<SoundManager>().Play("Knarksen");
         StopMovement = false;
         MoveOptionsAndRotations = _listOfInventorySlots.CollectMoveOptionsandRotation();
         _player.MovePlayer(MoveOptionsAndRotations, Enemies);

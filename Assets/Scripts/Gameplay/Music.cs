@@ -18,6 +18,7 @@ public class Music : MonoBehaviour
     [Header("Music")]
     [SerializeField] public AudioSource _hintergrundmusik;
 
+
     void Start()
     {
         if (musicMuted == 0)
@@ -56,4 +57,8 @@ public class Music : MonoBehaviour
             musicMuted = 1;
         }
     }
+
+
+
+
 }

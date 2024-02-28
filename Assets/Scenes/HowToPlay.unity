@@ -7659,8 +7659,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Loki's monstrous Children came to help him. \nEach offers their own unique
-    Power to guide Loki's way. \n"
+  m_text: "Loki's monstrous children came to help him. \nEach offers their own unique
+    power to guide Loki's way. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
