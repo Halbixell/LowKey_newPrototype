@@ -14,6 +14,8 @@ public class HowToPlayScript : MonoBehaviour
     public GameObject[] AnimationSteps;
     public Image EndHowToPlay;
 
+    public Image MoveImageToRotate;
+
     public MovePlayerPreview _player;
     public GameObject _direction;
 
@@ -49,11 +51,14 @@ public class HowToPlayScript : MonoBehaviour
                     Vector2 targetPosition = new Vector2(-141, -172);
                     MoveImageToTarget(targetPosition);
                     break;
-                case 3:
+                case 2:
+                    StartCoroutine(RotateImage(MoveImageToRotate));
+                    break;
+                case 4:
                     Vector2 targetPosition2 = new Vector2(210, -172);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
-                case 5:
+                case 6:
                     _player.MovePlayer();
                     _direction.SetActive(false);
                     break;
@@ -82,12 +87,16 @@ public class HowToPlayScript : MonoBehaviour
                     Vector2 targetPosition = new Vector2(-141, -172);
                     MoveImageToTarget(targetPosition);
                     break;
-                case 3:
+                case 2:
+                    StartCoroutine(RotateImage(MoveImageToRotate));
+                    break;
+                case 4:
                     Vector2 targetPosition2 = new Vector2(210, -172);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
-                case 5:
+                case 6:
                     _player.MovePlayer();
+                    _direction.SetActive(false);
                     break;
 
 
@@ -153,6 +162,16 @@ public class HowToPlayScript : MonoBehaviour
     public void LoadLevelSelection()
     {
         SceneManager.LoadScene("LevelSelector");
+    }
+
+    private IEnumerator RotateImage(Image moveImage)
+    {
+        while(moveImage.transform.parent.gameObject.activeSelf)
+        {
+            moveImage.transform.Rotate(0f, 0f, 90f);
+            yield return new WaitForSeconds(1f);
+        }
+        yield return null;
     }
 }
 
