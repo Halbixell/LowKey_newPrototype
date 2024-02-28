@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private LevelController _levelController;
     [SerializeField] private Canvas WinCanvas;
+    [SerializeField] private Canvas TrueLostCanvas;
     [SerializeField] private Canvas LoseCanvas;
 
     public delegate void PlayerTurnStartAction();
@@ -121,7 +122,7 @@ public class PlayerController : MonoBehaviour
 
         isMoving = false;
 
-        if(!WinCanvas.isActiveAndEnabled)
+        if(!WinCanvas.isActiveAndEnabled && !TrueLostCanvas.isActiveAndEnabled)
         {
             LoseCanvas.gameObject.SetActive(true);
 
