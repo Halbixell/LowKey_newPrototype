@@ -46,6 +46,8 @@ public class LevelSelectionMenuManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("stars" + i.ToString(), 0);
         }
+        UnlockedLevelsScript.freigeschaltenesLevel = 1;
+        Debug.Log("Freigeschalten bei Reset:" + UnlockedLevelsScript.freigeschaltenesLevel);
         unlockedLevels = 0;
         PlayerPrefs.SetInt("unlockedLevels", unlockedLevels);
         PlayerPrefs.Save();
@@ -79,17 +81,22 @@ public class LevelSelectionMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         HowToPlayButton.onClick.AddListener(LoadHowToPlay);
-
         currentLevel = 0;
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
-
+        Debug.Log("freigeschalten bei Start: " + UnlockedLevelsScript.freigeschaltenesLevel);
         for (int i=0; i<levelObjects.Length; i++)
-        {
-            if (unlockedLevels >= i)
+        {//unlockedLevels >= i
+            if (UnlockedLevelsScript.freigeschaltenesLevel-1 >= i)
             {
                 levelObjects[i].LevelButton.interactable = true;
                 int stars = PlayerPrefs.GetInt("stars" + i.ToString(), 0);
+                if (stars >= 3)
+                {
+                    stars = 3;
+                }
+                Debug.Log("In Level " + i + " sind die Sterne: " + stars);
                 for(int j=0; j < stars; j++)
                 {
                     levelObjects[i].Stars[j].sprite = completedStarSprite;

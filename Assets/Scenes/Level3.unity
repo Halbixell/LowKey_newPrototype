@@ -10811,7 +10811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6406052932501237927, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: RavenIndex
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6406052932501237927, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: _ravenCounter
@@ -10867,7 +10867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6561708681732937908, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: RavenIndex
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6561708681732937908, guid: dffdb9b57fdea7d4bb5c0965300fdce5, type: 3}
       propertyPath: _ravenCounter
