@@ -26836,6 +26836,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 685846749}
     - target: {fileID: 3448459211237134121, guid: f493a00aef7383b41b68cf17474466ef, type: 3}
+      propertyPath: TrueLostCanvas
+      value: 
+      objectReference: {fileID: 1038982700}
+    - target: {fileID: 3448459211237134121, guid: f493a00aef7383b41b68cf17474466ef, type: 3}
       propertyPath: inventorySlots
       value: 
       objectReference: {fileID: 1215092277}
