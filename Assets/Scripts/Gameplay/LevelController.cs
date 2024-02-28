@@ -63,7 +63,7 @@ public class LevelController : MonoBehaviour
         GameOverText.canvasRenderer.SetAlpha(0f);
         LoseMainMenuButton.onClick.AddListener(LoadMainMenu);
         LoseRestartButton.onClick.AddListener(RestartLevel);
-        RestartLevelWhilePlaying.onClick.AddListener(RestartLevel);
+        RestartLevelWhilePlaying.onClick.AddListener(LoadMainMenu);
         WinMainMenuButton.onClick.AddListener(LoadMainMenu);
         WinRestartLevelButton.onClick.AddListener(RestartLevel);
         NextLevelButton.onClick.AddListener(LoadNextLevel);
