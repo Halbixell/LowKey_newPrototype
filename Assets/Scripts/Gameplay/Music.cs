@@ -7,12 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class Music : MonoBehaviour
 {
+
     static int musicMuted = 1;
     [Header("Button")]
     [SerializeField] public Button _musicButton;
     [SerializeField] public Image _musicImage;
     [SerializeField] private Sprite _muted;
     [SerializeField] private Sprite _unmuted;
+
+    public Slider musicSlider;
+    [HideInInspector] static float gemerkt=1.0f;
 
 
     [Header("Music")]
@@ -23,15 +27,17 @@ public class Music : MonoBehaviour
     {
         if (musicMuted == 0)
         {
-            _hintergrundmusik.mute = true;
+            _hintergrundmusik.volume = 0.0f;
             _musicImage.sprite = _muted;
             musicMuted = 0;
+            musicSlider.value = 0.0f;
         }
         else
         {
-            _hintergrundmusik.mute = false;
+            _hintergrundmusik.volume = gemerkt;
             _musicImage.sprite = _unmuted;
             musicMuted = 1;
+            musicSlider.value = gemerkt;
         }
         _musicButton.onClick.AddListener(MusicMute);
     }
@@ -44,20 +50,50 @@ public class Music : MonoBehaviour
 
     void MusicMute()
     {
+        Debug.Log(gemerkt);
         if (musicMuted == 1)
         {
-            _hintergrundmusik.mute = true;
+            _hintergrundmusik.volume = 0.0f;
             _musicImage.sprite = _muted;
             musicMuted = 0;
+            musicSlider.value = 0.0f;
         }
         else
         {
-            _hintergrundmusik.mute = false;
+            _hintergrundmusik.volume = gemerkt;
             _musicImage.sprite = _unmuted;
             musicMuted = 1;
+            musicSlider.value = gemerkt;
         }
     }
 
+    public void MusicVolume(float volume)
+    {
+        if (volume != 0)
+        {
+            gemerkt = volume;
+        }
+        _hintergrundmusik.volume = volume;
+        if (_hintergrundmusik.volume == 0.0f)
+        {
+            
+            _musicImage.sprite = _muted;
+            musicMuted = 0;
+            
+        }
+        else
+        {
+            
+            _musicImage.sprite = _unmuted;
+            musicMuted = 1;
+            
+        }
+    }
+
+    public void SliderMusic()
+    {
+        MusicVolume(musicSlider.value);
+    }
 
 
 
