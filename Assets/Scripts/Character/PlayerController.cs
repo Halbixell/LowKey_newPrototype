@@ -14,10 +14,13 @@ public class PlayerController : MonoBehaviour
 
     private List<ItemEntry> MoveList;
     private bool isMoving = false;
+    [HideInInspector] public bool alreadyMovedOnce = false;
 
     private int MoveLooper = -1;
 
     [SerializeField] private LevelController _levelController;
+    [SerializeField] private Canvas WinCanvas;
+    [SerializeField] private Canvas LoseCanvas;
 
     public delegate void PlayerTurnStartAction();
 
@@ -25,14 +28,16 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        alreadyMovedOnce = false;
         _animator = GetComponent<CharacterAnimator>();
         _levelController = FindObjectOfType<LevelController>();
     }
 
     public void MovePlayer(List<ItemEntry> MoveOptions, List<EnemyController> Enemies)
     {
-        if (!isMoving)
+        if (!isMoving && !alreadyMovedOnce)
         {
+            alreadyMovedOnce = true;
             isMoving = true;
             StartCoroutine(MovePlayerCoroutine(MoveOptions, Enemies));
 
@@ -40,6 +45,11 @@ public class PlayerController : MonoBehaviour
             {
                 OnPlayerTurnStart();
             }
+        }
+        else if(!isMoving && alreadyMovedOnce)
+        {
+            Debug.Log("Done with the level!");
+
         }
     }
 
@@ -110,7 +120,12 @@ public class PlayerController : MonoBehaviour
         MoveList.Clear();
 
         isMoving = false;
-        //MoveList.Clear();
+
+        if(!WinCanvas.isActiveAndEnabled)
+        {
+            LoseCanvas.gameObject.SetActive(true);
+        }
+
         yield return null;
     }
 
