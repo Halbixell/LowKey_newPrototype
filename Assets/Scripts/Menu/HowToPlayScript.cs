@@ -75,6 +75,13 @@ public class HowToPlayScript : MonoBehaviour
 
     public void ButtonPressBefore()
     {
+        for (int s = 0; s < _soundManager.sounds.Length; s++)
+        {
+            string name = _soundManager.sounds[s].name;
+            _soundManager.StopMusic(name);
+
+        }
+
         if (StepCounter >= 1)
         {
             AnimationSteps[StepCounter].SetActive(false);

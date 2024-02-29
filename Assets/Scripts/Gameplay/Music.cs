@@ -16,7 +16,7 @@ public class Music : MonoBehaviour
     [SerializeField] private Sprite _unmuted;
 
     public Slider musicSlider;
-    [HideInInspector] static float gemerkt=1.0f;
+    [HideInInspector] static float gemerkt=0.5f;
 
 
     [Header("Music")]

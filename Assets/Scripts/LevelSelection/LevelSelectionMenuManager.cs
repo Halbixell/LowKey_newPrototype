@@ -89,10 +89,6 @@ public class LevelSelectionMenuManager : MonoBehaviour
             {
                 levelObjects[i].LevelButton.interactable = true;
                 int stars = PlayerPrefs.GetInt("stars" + i.ToString(), 0);
-                if (stars >= 3)
-                {
-                    stars = 3;
-                }
                 Debug.Log("In Level " + i + " sind die Sterne: " + stars);
                 for(int j=0; j < stars; j++)
                 {

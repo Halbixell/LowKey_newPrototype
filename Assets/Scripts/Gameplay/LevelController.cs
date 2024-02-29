@@ -80,7 +80,7 @@ public class LevelController : MonoBehaviour
     void StartButtonClicked()
     {
        
-            FindObjectOfType<SoundManager>().Play("Knarksen");
+        FindObjectOfType<SoundManager>().Play("Knarksen");
         
         
         StopMovement = false;
