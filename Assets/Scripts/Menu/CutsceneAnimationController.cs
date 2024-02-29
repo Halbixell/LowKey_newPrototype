@@ -21,35 +21,29 @@ public class CutsceneAnimationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("1");
-        //if(LevelSelectionMenuManager.currentLevel == 1)
+        if(LevelSelectionMenuManager.currentLevel == 1)
         {
-            Debug.Log("2");
             AnimationSteps_Beginning[StepCounter].SetActive(true);
-            Debug.Log("3");
             AnimationSteps_Beginning_Canvas[StepCounter].SetActive(true);
-            Debug.Log("4");
             StartCoroutine(BeginningCutscene());
         }
-        //else
-        //{
-        //    AnimationSteps_End[StepCounter].SetActive(true);
-        //    AnimationSteps_End_Canvas[StepCounter].SetActive(true);
-        //    StartCoroutine(EndingCutscene());
-        //}
+        else
+        {
+            AnimationSteps_End[StepCounter].SetActive(true);
+            AnimationSteps_End_Canvas[StepCounter].SetActive(true);
+            StartCoroutine(EndingCutscene());
+        }
 
     }
 
 
     private IEnumerator BeginningCutscene()
     {
-        Debug.Log("5");
+
         Exposition[0].Play();
         yield return new WaitForSeconds(8f);
-        Debug.Log("6");
         Exposition[1].Play();
         yield return new WaitForSeconds(12f);
-        Debug.Log("7");
 
         AnimationSteps_Beginning[StepCounter].SetActive(false);
         AnimationSteps_Beginning_Canvas[StepCounter].SetActive(false);
@@ -76,6 +70,8 @@ public class CutsceneAnimationController : MonoBehaviour
     private IEnumerator EndingCutscene()
     {
 
+
+        SceneManager.LoadScene("LevelSelector");
         yield return null;
     }
 
