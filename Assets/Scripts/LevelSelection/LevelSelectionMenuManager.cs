@@ -18,7 +18,16 @@ public class LevelSelectionMenuManager : MonoBehaviour
     public void OnClickLevel(int NumberOfLevel)
     {
         currentLevel = NumberOfLevel;
-        SceneManager.LoadScene("Level"+currentLevel);
+        
+       if (currentLevel != 1)
+        {
+            SceneManager.LoadScene("Level" + currentLevel);
+        }
+        else if (currentLevel == 1)
+        {
+            SceneManager.LoadScene("AlphaundOmega");
+        }
+        
 
     }
 
@@ -27,7 +36,16 @@ public class LevelSelectionMenuManager : MonoBehaviour
         int richtigesLevel = PlayerPrefs.GetInt("unlockedLevels", 0)+1;
         currentLevel = richtigesLevel;
         PlayerPrefs.Save();
-        SceneManager.LoadScene("Level" + richtigesLevel);
+
+        if (richtigesLevel != 1)
+        {
+            SceneManager.LoadScene("Level" + richtigesLevel);
+        }
+        else if (richtigesLevel == 1)
+        {
+            SceneManager.LoadScene("AlphaundOmega");
+        }
+            
     }
 
     public void OnClickMenu()

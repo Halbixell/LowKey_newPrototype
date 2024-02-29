@@ -42,12 +42,12 @@ public class SoundManager : MonoBehaviour
     public void Play(string name)
     {
         
-        if (SoundMuteScript.muted == false)
-        {
+        
+        
             Sounds s = Array.Find(sounds, sounds => sounds.name == name);
             s.source.Play();
 
-        }
+        
 
         
     }
