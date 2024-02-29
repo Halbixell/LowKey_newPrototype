@@ -176,7 +176,12 @@ public class LevelController : MonoBehaviour
     {
         if (LevelSelectionMenuManager.currentLevel != 10)
         {
+
             LevelSelectionMenuManager.currentLevel++;
+            if (LevelSelectionMenuManager.currentLevel > 10)
+            {
+                LevelSelectionMenuManager.currentLevel = 10;
+            }
             PlayerPrefs.SetInt("currentLevel", LevelSelectionMenuManager.currentLevel);
             PlayerPrefs.Save();
            

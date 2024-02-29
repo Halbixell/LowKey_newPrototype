@@ -14,20 +14,35 @@ public class LevelSelectionMenuManager : MonoBehaviour
     public LevelObjectScript[] levelObjects;
 
     [SerializeField] private Button HowToPlayButton;
+    [SerializeField] private Button ViewEndingButton;
+
+    public void ViewStory()
+    {
+        currentLevel = 1;
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("AlphaundOmega");
+    }
+
+
+    public void ViewEnding()
+    {
+        currentLevel = 10;
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("AlphaundOmega");
+    }
+
 
     public void OnClickLevel(int NumberOfLevel)
     {
         currentLevel = NumberOfLevel;
-        
-       if (currentLevel != 1)
+        if (currentLevel > 10)
         {
-            SceneManager.LoadScene("Level" + currentLevel);
-        }
-        else if (currentLevel == 1)
-        {
-            SceneManager.LoadScene("AlphaundOmega");
+            currentLevel = 10;
         }
         
+       
+        SceneManager.LoadScene("Level" + currentLevel);
+       
 
     }
 
@@ -36,6 +51,11 @@ public class LevelSelectionMenuManager : MonoBehaviour
         int richtigesLevel = PlayerPrefs.GetInt("unlockedLevels", 0)+1;
         currentLevel = richtigesLevel;
         PlayerPrefs.Save();
+
+        if (richtigesLevel > 10)
+        {
+            richtigesLevel = 10;
+        }
 
         if (richtigesLevel != 1)
         {
@@ -97,7 +117,7 @@ public class LevelSelectionMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ViewEndingButton.interactable = false;
         HowToPlayButton.onClick.AddListener(LoadHowToPlay);
         currentLevel = 0;
         unlockedLevels = PlayerPrefs.GetInt("unlockedLevels", 0);
@@ -113,6 +133,12 @@ public class LevelSelectionMenuManager : MonoBehaviour
                     levelObjects[i].Stars[j].sprite = completedStarSprite;
                 }
             }
+            
+        }
+        if (levelObjects[levelObjects.Length-1].LevelButton.interactable==true)
+        {
+            ViewEndingButton.interactable = true;
+
         }
     }
 

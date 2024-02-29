@@ -23,7 +23,7 @@ public class Music : MonoBehaviour
     [SerializeField] public AudioSource _hintergrundmusik;
 
 
-    void Start()
+    void Awake()
     {
         if (musicMuted == 0)
         {
