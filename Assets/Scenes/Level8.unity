@@ -307,6 +307,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 952219877651197389, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952219877651197389, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952219877651197389, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 968058666375651402, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
       value: 
@@ -371,6 +383,14 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1936079304}
+    - target: {fileID: 1688526590793242466, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688526590793242466, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: _hintergrundmusik
       value: 
@@ -503,6 +523,14 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 1936079304}
+    - target: {fileID: 3439447856770136378, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439447856770136378, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3831327503110187992, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: popup
       value: 
@@ -701,6 +729,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6943910089785332590, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291453079669345016, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291453079669345016, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291453079669345016, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7292045173861532986, guid: a55a90b5637db464183f8c7876d249ba, type: 3}

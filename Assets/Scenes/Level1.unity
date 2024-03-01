@@ -1782,7 +1782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 559520583122150404, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 688787266055378445, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1986,8 +1986,12 @@ PrefabInstance:
         Video.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 68344af2f17051c41bba7689e145f82c, type: 3}
+    - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_RenderMode
@@ -2384,7 +2388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6937746732846868650, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6943910089785332590, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2645,7 +2649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_PlayOnAwake
