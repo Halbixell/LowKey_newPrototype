@@ -4018,7 +4018,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: To complete a level, Loki must get to the exit, which is right where Odin's
-    favorite doormat can be found. If you don't get to the doormat within you path,
+    favorite doormat can be found. If you don't get to the doormat within your path,
     you have to try again.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
