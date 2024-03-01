@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6186837}
   - component: {fileID: 6186838}
+  - component: {fileID: 6186839}
   m_Layer: 5
   m_Name: Video Player Heimdall
   m_TagString: Untagged
@@ -179,15 +180,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Heimdall
-    Video.mp4
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -197,6 +197,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &6186839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6186836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: HeimdallVideo.webm
 --- !u!1 &20372705
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33551546}
   - component: {fileID: 33551547}
+  - component: {fileID: 33551548}
   m_Layer: 5
   m_Name: Video Player Freya
   m_TagString: Untagged
@@ -330,15 +344,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Freya
-    Video.mp4
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -348,6 +361,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &33551548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33551545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: FreyaVideo.webm
 --- !u!1 &43241973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,6 +3442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367064093}
   - component: {fileID: 367064094}
+  - component: {fileID: 367064095}
   m_Layer: 5
   m_Name: Video Player Thor
   m_TagString: Untagged
@@ -3462,15 +3489,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Thor
-    Video.mp4
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -3480,6 +3506,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &367064095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367064092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: ThorVideo.webm
 --- !u!1 &374705491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10047,6 +10086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125868534}
   - component: {fileID: 1125868535}
+  - component: {fileID: 1125868536}
   m_Layer: 5
   m_Name: Video Player Odin
   m_TagString: Untagged
@@ -10093,15 +10133,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Odin
-    Video.mp4
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -10111,6 +10150,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1125868536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125868533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: OdinVideo.webm
 --- !u!1001 &1179369848
 PrefabInstance:
   m_ObjectHideFlags: 0

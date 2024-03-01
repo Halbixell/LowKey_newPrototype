@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2188866248749018323}
   - component: {fileID: 8922063662207552042}
+  - component: {fileID: 1962149214114337173}
   m_Layer: 5
   m_Name: Video Player Thor
   m_TagString: Untagged
@@ -198,7 +199,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: Application.streamingAssetsPath+"Thor Video.mov"
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -208,6 +209,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1962149214114337173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174806993784361595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: ThorVideo.webm
 --- !u!1 &531911043482697045
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7924160441124194440}
   - component: {fileID: 559520583122150404}
+  - component: {fileID: 3293551238732399878}
   m_Layer: 5
   m_Name: Video Player Odin
   m_TagString: Untagged
@@ -882,7 +897,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: Application.streamingAssetsPath+"Odin Video.mov"
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -892,6 +907,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &3293551238732399878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569599363875247006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: OdinVideo.webm
 --- !u!1 &2845196224509896293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,12 +1079,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2136,6 +2164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3518330949486489968}
   - component: {fileID: 1842741813662921983}
+  - component: {fileID: 1220009846745534125}
   m_Layer: 5
   m_Name: Video Player Freya
   m_TagString: Untagged
@@ -2189,7 +2218,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file:///Application.streamingAssetsPath/Freya Video.mov
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -2199,6 +2228,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1220009846745534125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5722669054630309011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: FreyaVideo.webm
 --- !u!1 &5760507739808067150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3942250314292165722}
   - component: {fileID: 6937746732846868650}
+  - component: {fileID: 902060738089034287}
   m_Layer: 5
   m_Name: Video Player Heimdall
   m_TagString: Untagged
@@ -3151,7 +3194,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: Application.streamingAssetsPath+"Heimdall Video.mov"
+  m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -3161,6 +3204,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &902060738089034287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854282220558761713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddffbee298970429c575dc9212523c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoURL: HeimdallVideo.webm
 --- !u!1001 &430010621920452381
 PrefabInstance:
   m_ObjectHideFlags: 0

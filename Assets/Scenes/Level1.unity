@@ -1777,12 +1777,11 @@ PrefabInstance:
       objectReference: {fileID: 488829771}
     - target: {fileID: 559520583122150404, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_Url
-      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Odin
-        Video.mp4
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 559520583122150404, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 688787266055378445, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1982,8 +1981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_Url
-      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Freya
-        Video.mp4
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_VideoClip
@@ -1991,7 +1989,7 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: 68344af2f17051c41bba7689e145f82c, type: 3}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_RenderMode
@@ -2383,12 +2381,11 @@ PrefabInstance:
       objectReference: {fileID: 488829771}
     - target: {fileID: 6937746732846868650, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_Url
-      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Heimdall
-        Video.mp4
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6937746732846868650, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6943910089785332590, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2644,12 +2641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_Url
-      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Thor
-        Video.mp4
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_DataSource
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_PlayOnAwake
