@@ -16,7 +16,8 @@ public class Music : MonoBehaviour
     [SerializeField] private Sprite _unmuted;
 
     public Slider musicSlider;
-    [HideInInspector] static float gemerkt=0.5f;
+    [HideInInspector] static float gemerkt;
+    [HideInInspector] static float gemerkt_playerpref;
 
 
     [Header("Music")]
@@ -25,6 +26,8 @@ public class Music : MonoBehaviour
 
     void Awake()
     {
+        gemerkt = PlayerPrefs.GetFloat("gemerkt", 0.5f);
+        gemerkt_playerpref = PlayerPrefs.GetFloat("gemerkt_playerpref", 0.5f);
         if (musicMuted == 0)
         {
             _hintergrundmusik.volume = 0.0f;
@@ -34,10 +37,10 @@ public class Music : MonoBehaviour
         }
         else
         {
-            _hintergrundmusik.volume = gemerkt;
+            _hintergrundmusik.volume = gemerkt_playerpref;
             _musicImage.sprite = _unmuted;
             musicMuted = 1;
-            musicSlider.value = gemerkt;
+            musicSlider.value = gemerkt_playerpref;
         }
         _musicButton.onClick.AddListener(MusicMute);
     }
@@ -73,6 +76,8 @@ public class Music : MonoBehaviour
         {
             gemerkt = volume;
         }
+        PlayerPrefs.SetFloat("gemerkt", gemerkt);
+        PlayerPrefs.SetFloat("gemerkt_playerpref", volume);
         _hintergrundmusik.volume = volume;
         if (_hintergrundmusik.volume == 0.0f)
         {
