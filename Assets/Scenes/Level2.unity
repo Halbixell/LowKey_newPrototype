@@ -1185,6 +1185,10 @@ PrefabInstance:
       propertyPath: inventorySlots.Array.data[7]
       value: 
       objectReference: {fileID: 1050797205}
+    - target: {fileID: 6241204810023446812, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Spotted
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe8da8cb40c31140846f5890c3ce200, type: 3}
 --- !u!114 &1007349628 stripped

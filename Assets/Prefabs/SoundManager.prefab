@@ -55,3 +55,18 @@ MonoBehaviour:
     volume: 1
     loop: 1
     source: {fileID: 0}
+  - name: Gewonnen
+    clip: {fileID: 8300000, guid: a134a0b7cf637a145ad0ffa7292c327c, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Langsam
+    clip: {fileID: 8300000, guid: ccbfb2862e1440245bcafd0d5c3d7e0e, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Spotted
+    clip: {fileID: 8300000, guid: b5db8a9016ddb574698d9e08311328df, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}

@@ -127,8 +127,9 @@ public class PlayerController : MonoBehaviour
             LoseCanvas.gameObject.SetActive(true);
 
             FindObjectOfType<SoundManager>().StopMusic("Knarksen");
+            FindObjectOfType<SoundManager>().Play("Langsam");
 
-            
+
         }
 
         yield return null;

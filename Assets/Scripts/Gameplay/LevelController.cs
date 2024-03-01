@@ -92,10 +92,9 @@ public class LevelController : MonoBehaviour
     {
       
         FindObjectOfType<SoundManager>().StopMusic("Knarksen");
-       
+        FindObjectOfType<SoundManager>().Play("Spotted");
 
         StopMovement = true;
-        Debug.Log("Level is lost!");
         GameOverCanvas.gameObject.SetActive(true);
         StartCoroutine(FadeInScreen(GameOverCanvasGroup, GameOverText));
     }
@@ -104,8 +103,8 @@ public class LevelController : MonoBehaviour
     {
        
         FindObjectOfType<SoundManager>().StopMusic("Knarksen");
-    
-        
+
+        FindObjectOfType<SoundManager>().Play("Gewonnen");
         StopMovement = true;
        
         LevelWonCanvas.gameObject.SetActive(true);
