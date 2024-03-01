@@ -48,14 +48,14 @@ public class HowToPlayScript : MonoBehaviour
             switch (StepCounter)
             {
                 case 1:
-                    Vector2 targetPosition = new Vector2(-141, -172);
+                    Vector2 targetPosition = new Vector2(-141, -193);
                     MoveImageToTarget(targetPosition);
                     break;
                 case 2:
                     StartCoroutine(RotateImage(MoveImageToRotate));
                     break;
                 case 4:
-                    Vector2 targetPosition2 = new Vector2(210, -172);
+                    Vector2 targetPosition2 = new Vector2(210, -193);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 6:
@@ -91,14 +91,14 @@ public class HowToPlayScript : MonoBehaviour
             switch (StepCounter)
             {
                 case 1:
-                    Vector2 targetPosition = new Vector2(-141, -172);
+                    Vector2 targetPosition = new Vector2(-141, -193);
                     MoveImageToTarget(targetPosition);
                     break;
                 case 2:
                     StartCoroutine(RotateImage(MoveImageToRotate));
                     break;
                 case 4:
-                    Vector2 targetPosition2 = new Vector2(210, -172);
+                    Vector2 targetPosition2 = new Vector2(210, -193);
                     MoveImageToTargetAndDelete(targetPosition2);
                     break;
                 case 6:

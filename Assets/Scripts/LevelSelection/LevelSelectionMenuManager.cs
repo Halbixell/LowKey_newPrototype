@@ -106,6 +106,7 @@ public class LevelSelectionMenuManager : MonoBehaviour
             }
 
         }
+        ViewEndingButton.interactable = false;
         
         PlayerPrefs.Save();
         
@@ -135,7 +136,7 @@ public class LevelSelectionMenuManager : MonoBehaviour
             }
             
         }
-        if (levelObjects[levelObjects.Length].LevelButton.interactable==true)
+        if (unlockedLevels>=10)
         {
             ViewEndingButton.interactable = true;
 
