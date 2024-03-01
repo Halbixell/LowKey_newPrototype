@@ -14,8 +14,6 @@ public class CutsceneAnimationController : MonoBehaviour
 
     public bool isBeginning = true;
 
-    public List<AudioSource> Exposition;
-    public List<AudioSource> Finale;
 
 
     // Start is called before the first frame update
@@ -39,10 +37,11 @@ public class CutsceneAnimationController : MonoBehaviour
 
     private IEnumerator BeginningCutscene()
     {
-
-        Exposition[0].Play();
+        FindObjectOfType<SoundManager>().Play("Expansion_1");
+        //Exposition[0].Play();
         yield return new WaitForSeconds(8f);
-        Exposition[1].Play();
+        FindObjectOfType<SoundManager>().Play("Expansion_2");
+        //Exposition[1].Play();
         yield return new WaitForSeconds(12f);
 
         AnimationSteps_Beginning[StepCounter].SetActive(false);
@@ -53,11 +52,15 @@ public class CutsceneAnimationController : MonoBehaviour
         AnimationSteps_Beginning[StepCounter].SetActive(true);
         AnimationSteps_Beginning_Canvas[StepCounter].SetActive(true);
 
-        Exposition[2].Play();
+
+        FindObjectOfType<SoundManager>().Play("Expansion_3");
+        //Exposition[2].Play();
         yield return new WaitForSeconds(7.6f);
-        Exposition[3].Play();
+        FindObjectOfType<SoundManager>().Play("Expansion_4");
+        //Exposition[3].Play();
         yield return new WaitForSeconds(7f);
-        Exposition[4].Play();
+        FindObjectOfType<SoundManager>().Play("Expansion_5");
+        //Exposition[4].Play();
         yield return new WaitForSeconds(7f);
 
 
