@@ -13,7 +13,8 @@ public class SoundMuteScript : MonoBehaviour
     [SerializeField] private Sprite _unmutedSound;
     public SoundManager _soundManager;
     public Slider sliderSound;
-    [HideInInspector] static float gemerkt_sound=1.0f;
+    [HideInInspector] static float gemerkt_sound;
+    [HideInInspector] static float gemerkt_sound_PP;
 
     public void OnClickMuteSound()
     {
@@ -46,16 +47,18 @@ public class SoundMuteScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gemerkt_sound = PlayerPrefs.GetFloat("gemerkt_sound", 1);
+        gemerkt_sound_PP = PlayerPrefs.GetFloat("gemerkt_sound_PP", 1);
         if (muted == false)
         {
             foreach (Sounds s in _soundManager.sounds)
             {
                 
-                s.volume = gemerkt_sound;
-                s.source.volume = gemerkt_sound;
+                s.volume = gemerkt_sound_PP;
+                s.source.volume = gemerkt_sound_PP;
 
             }
-            sliderSound.value = gemerkt_sound;
+            sliderSound.value = gemerkt_sound_PP;
             muted = false;
             _musicImage.sprite = _unmutedSound;
         }
@@ -81,7 +84,8 @@ public class SoundMuteScript : MonoBehaviour
         {
             gemerkt_sound = volume;
         }
-        
+        PlayerPrefs.SetFloat("gemerkt_sound", gemerkt_sound);
+        PlayerPrefs.SetFloat("gemerkt_sound_PP", volume);
         foreach (Sounds s in _soundManager.sounds)
         {
 

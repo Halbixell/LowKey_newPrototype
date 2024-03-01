@@ -14,14 +14,16 @@ public class CutsceneAnimationController : MonoBehaviour
 
     public bool isBeginning = true;
 
-    public List<AudioSource> Exposition;
-    public List<AudioSource> Finale;
+    private SoundManager _soundManager;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if(LevelSelectionMenuManager.currentLevel == 1)
+        _soundManager = FindObjectOfType<SoundManager>();
+
+        if (LevelSelectionMenuManager.currentLevel == 1)
         {
             AnimationSteps_Beginning[StepCounter].SetActive(true);
             AnimationSteps_Beginning_Canvas[StepCounter].SetActive(true);
@@ -40,9 +42,13 @@ public class CutsceneAnimationController : MonoBehaviour
     private IEnumerator BeginningCutscene()
     {
 
-        Exposition[0].Play();
+        SoundManager S = FindObjectOfType<SoundManager>();
+
+        _soundManager.Play("Expansion_1");
+        //Exposition[0].Play();
         yield return new WaitForSeconds(8f);
-        Exposition[1].Play();
+        _soundManager.Play("Expansion_2");
+        //Exposition[1].Play();
         yield return new WaitForSeconds(12f);
 
         AnimationSteps_Beginning[StepCounter].SetActive(false);
@@ -53,11 +59,15 @@ public class CutsceneAnimationController : MonoBehaviour
         AnimationSteps_Beginning[StepCounter].SetActive(true);
         AnimationSteps_Beginning_Canvas[StepCounter].SetActive(true);
 
-        Exposition[2].Play();
+
+        _soundManager.Play("Expansion_3");
+        //Exposition[2].Play();
         yield return new WaitForSeconds(7.6f);
-        Exposition[3].Play();
+        _soundManager.Play("Expansion_4");
+        //Exposition[3].Play();
         yield return new WaitForSeconds(7f);
-        Exposition[4].Play();
+        _soundManager.Play("Expansion_5");
+        //Exposition[4].Play();
         yield return new WaitForSeconds(7f);
 
 
@@ -69,6 +79,12 @@ public class CutsceneAnimationController : MonoBehaviour
 
     private IEnumerator EndingCutscene()
     {
+
+        _soundManager.Play("Final_1");
+        yield return new WaitForSeconds(12.5f);
+
+        _soundManager.Play("Final_2");
+        yield return new WaitForSeconds(6f);
 
 
         SceneManager.LoadScene("LevelSelector");
