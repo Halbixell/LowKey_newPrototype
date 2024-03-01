@@ -169,7 +169,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6186836}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d55eaf4822c38cf4f82c7b6f67cc4729, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5e795cc8e083f9f4aaac8b42495cb14d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -186,7 +186,8 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Heimdall
+    Video.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -319,7 +320,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33551545}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e571a814fd6ad204b9175b79db791346, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 68344af2f17051c41bba7689e145f82c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -336,7 +337,8 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Freya
+    Video.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -3450,7 +3452,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367064092}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 2607f0e42c668e944ba812fafd160b2c, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b9722cb1aea568a4794f44c71ab82a88, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -3467,7 +3469,8 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Thor
+    Video.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -10080,7 +10083,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125868533}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: f66f4ca65656f8243bd169f1e9751661, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: bd92f4e1f22d6c641ad5560571fcdc9e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -10097,7 +10100,8 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Odin
+    Video.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
