@@ -3698,8 +3698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 0}
-  indexMemory: {fileID: 0}
-  popup: {fileID: 0}
+  indexMemory: {fileID: 5128803996566333935}
+  popup: {fileID: 531911043482697045}
   child: {fileID: 0}
 --- !u!1001 &2715057088966819636
 PrefabInstance:
