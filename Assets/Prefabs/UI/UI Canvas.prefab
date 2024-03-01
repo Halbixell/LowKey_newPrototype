@@ -191,15 +191,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Thor
-    Video.mp4
+  m_Url: Application.streamingAssetsPath+"Thor Video.mov"
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -876,15 +875,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Odin
-    Video.mp4
+  m_Url: Application.streamingAssetsPath+"Odin Video.mov"
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -2184,15 +2182,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Freya
-    Video.mp4
+  m_Url: file:///Application.streamingAssetsPath/Freya Video.mov
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -3147,15 +3144,14 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: file://C:/Users/BFC03/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Heimdall
-    Video.mp4
+  m_Url: Application.streamingAssetsPath+"Heimdall Video.mov"
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
