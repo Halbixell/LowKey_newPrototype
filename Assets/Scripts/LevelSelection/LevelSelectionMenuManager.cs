@@ -135,7 +135,7 @@ public class LevelSelectionMenuManager : MonoBehaviour
             }
             
         }
-        if (levelObjects[levelObjects.Length-1].LevelButton.interactable==true)
+        if (levelObjects[levelObjects.Length].LevelButton.interactable==true)
         {
             ViewEndingButton.interactable = true;
 
