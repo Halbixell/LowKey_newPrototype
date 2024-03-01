@@ -1775,6 +1775,15 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 488829771}
+    - target: {fileID: 559520583122150404, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Odin
+        Video.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 559520583122150404, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 688787266055378445, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1970,6 +1979,19 @@ PrefabInstance:
     - target: {fileID: 1688526590793242466, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Freya
+        Video.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842741813662921983, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1917950630353986904, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: _hintergrundmusik
@@ -2355,6 +2377,15 @@ PrefabInstance:
       propertyPath: _inventoryManager
       value: 
       objectReference: {fileID: 488829771}
+    - target: {fileID: 6937746732846868650, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Heimdall
+        Video.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937746732846868650, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6943910089785332590, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2605,6 +2636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8854282220558761713, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/alexh/Documents/GitHub/LowKey_newPrototype/Assets/Art/Videos/Thor
+        Video.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
+      propertyPath: m_DataSource
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8922063662207552042, guid: a55a90b5637db464183f8c7876d249ba, type: 3}
